@@ -36,11 +36,17 @@
 
 .logo-container {
     display: flex;
+    margin-left: 8px;
 }
 
 .logo-container-img-1c {
     height: 105px;
     margin-right: 10px;
+}
+
+.logo-container-img-1c-top {
+    height: 70px;
+    margin-right: 5px;
 }
 
 .algotitm-logo {
@@ -61,6 +67,7 @@
 .info-container {
     width: 650px;
     height: 99px;
+    margin-right: 16px;
 }
 
 .info-container-top {
@@ -87,7 +94,6 @@
 .footer {
 
 }
-
 
 /* orderservice */
 .screen-display {
@@ -148,15 +154,6 @@ label {
   cursor: pointer;
 }
 
-input[type='radio'] {
-  position: relative;
-  height: 15px;
-  width: 15px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-}
 
 input[type='radio']::before {
   content: '';
@@ -182,8 +179,9 @@ input[type='radio']:checked::after {
   background-color: black;
   transform: translate(-50%, -50%);
   visibility: visible;
+  color: rgb(0,0,0);
 }
- 
+
 .submit-button {
     border: 0;
     background-color: rgba(222, 16, 16, .65);
@@ -200,4 +198,50 @@ input[type='radio']:checked::after {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+}
+
+/*  Медиатеги   */
+
+@media screen and (min-width: 300px) and (max-width: 440px){
+
+    .logo-container {
+        display: none;
+    }
+
+    .info-container {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .info-container-top {
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
+
+    .info-container-top-text{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .additional-text {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .links {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .info-container-bot {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 3px 0 3px;
+        height: 23px;
+    }
+    
+    .header {
+        height: 92px;
+    }
 }
