@@ -5,11 +5,11 @@
 
 .test {
     width: 960px;
-    height: 300px;
+    height: 3000px;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px auto 10px auto;
-    background-color: yellow;
+    background-color: rgb(255, 222, 65);
 }
 
 /* text */
