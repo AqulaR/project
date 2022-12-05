@@ -58,6 +58,11 @@
     margin-right: 5px;
 }
 
+.info-container-top-logo-container{
+    display: flex;
+    margin-left: 8px;
+}
+
 .algotitm-logo {
     border-left: 0.5px solid rgb(216, 188, 69);
     height: 57px;
@@ -220,7 +225,7 @@ input[type='radio']:checked::after {
 
 /*  Медиатеги   */
 
-@media screen and (min-width: 250px) and (max-width: 469px){
+@media screen and (min-width: 250px) and (max-width: 334px){
 
     .logo-container {
         display: none;
@@ -233,7 +238,17 @@ input[type='radio']:checked::after {
 
     .info-container-top {
         justify-content: space-between;
+        width: 100%;
         padding-bottom: 5px;
+    }
+
+    .logo-container-img-1c {
+        height: 70px;
+        margin-right: 5px;
+    }
+
+    .algotitm-logo {
+        display: none;
     }
 
     .info-container-top-text{
@@ -262,6 +277,75 @@ input[type='radio']:checked::after {
     .header {
         height: 92px;
     }
+
+    .info-container-top-logo-container {
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (min-width: 335px) and (max-width: 469px){
+
+    .logo-container {
+        display: none;
+    }
+
+    .info-container {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .info-container-top {
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
+
+    .logo-container-img-1c {
+        height: 70px;
+        margin-right: 7px;
+    }
+
+    .algotitm-logo {
+        height: 37px;
+    }
+
+    .logo-container-img-algoritm {
+        width: 65.5px;
+        height: 20.5px;
+        padding-left: 8px;
+        margin-right: 2px;
+    }
+
+    .info-container-top-text{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .additional-text {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .links {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .info-container-bot {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 3px 0 3px;
+        height: 23px;
+    }
+    
+    .header {
+        height: 92px;
+    }
+    
+    .info-container-top-logo-container {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 470px) and (max-width: 665px){
@@ -270,7 +354,7 @@ input[type='radio']:checked::after {
         display: none;
     }
 
-    .logo-container-img-1c-top {
+    .info-container-top-logo-container {
         display: none;
     }
 
@@ -282,7 +366,7 @@ input[type='radio']:checked::after {
 }
 
 @media screen and (min-width: 666px){
-    .logo-container-img-1c-top {
+    .info-container-top-logo-container {
         display: none;
     }
 
