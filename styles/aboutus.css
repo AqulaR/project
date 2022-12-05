@@ -1,5 +1,8 @@
 .founding-date-text {
-	width: 65%;
+	text-align: right;
+	width: 50%;
+	padding: 15px 15px;
+	font: 20px 'PTSans-Regular', sans-serif;
 }
 
 .founding-date-image {
@@ -8,5 +11,22 @@
 
 .founding-date {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+}
+
+.algoritm-text {
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 1px 5px 12px black;
+	width: 50%;
+	padding: 15px 15px;
+	font: 20px 'PTSans-Regular', sans-serif;
+}
+
+.founding-date-text-container {
+	display: flex;
+	justify-content: center;
+
+
 }
