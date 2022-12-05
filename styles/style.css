@@ -3,6 +3,15 @@
     font: 16px 'PTSans-Regular', sans-serif;
 }
 
+.test {
+    width: 960px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    background-color: yellow;
+}
+
 /* text */
 
 .mrgn10 {
@@ -86,7 +95,8 @@
 /* Main content */
 
 .main-content {
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* footer */
@@ -210,7 +220,7 @@ input[type='radio']:checked::after {
 
 /*  Медиатеги   */
 
-@media screen and (min-width: 250px) and (max-width: 440px){
+@media screen and (min-width: 250px) and (max-width: 469px){
 
     .logo-container {
         display: none;
@@ -251,5 +261,39 @@ input[type='radio']:checked::after {
     
     .header {
         height: 92px;
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 665px){
+
+    .algotitm-logo {
+        display: none;
+    }
+
+    .logo-container-img-1c-top {
+        display: none;
+    }
+
+    .info-container-top-text{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 666px){
+    .logo-container-img-1c-top {
+        display: none;
+    }
+
+    .info-container-top-text{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .test {
+        width: 98%;
     }
 }
