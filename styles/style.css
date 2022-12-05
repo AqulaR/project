@@ -154,6 +154,15 @@ label {
   cursor: pointer;
 }
 
+input[type='radio'] {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
 
 input[type='radio']::before {
   content: '';
@@ -179,9 +188,8 @@ input[type='radio']:checked::after {
   background-color: black;
   transform: translate(-50%, -50%);
   visibility: visible;
-  color: rgb(0,0,0);
 }
-
+ 
 .submit-button {
     border: 0;
     background-color: rgba(222, 16, 16, .65);
