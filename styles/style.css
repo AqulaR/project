@@ -202,7 +202,7 @@ input[type='radio']:checked::after {
 
 /*  Медиатеги   */
 
-@media screen and (min-width: 300px) and (max-width: 440px){
+@media screen and (min-width: 250px) and (max-width: 440px){
 
     .logo-container {
         display: none;
