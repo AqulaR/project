@@ -1,0 +1,12 @@
+.founding-date-text {
+	width: 65%;
+}
+
+.founding-date-image {
+
+}
+
+.founding-date {
+	display: flex;
+	align-items: center;
+}
