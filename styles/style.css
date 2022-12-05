@@ -90,26 +90,24 @@
 
 
 /* orderservice */
+.screen-display {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 30px;
+}
+
 .orderservice-container {
     font-family: 'PT Sans', sans-serif;
     width: 500px;
-    height: 750px;
     background-color: white;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, .5);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
 }
 
 .header-text {
     text-align: center;
     color: black;
-    font-size: 36px;
-    font-weight: bold;
     padding-top: 4%;
 }
 
@@ -195,6 +193,7 @@ input[type='radio']:checked::after {
     height: 50px;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 35px;
 }
 
 .submit-an-application{
