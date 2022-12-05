@@ -5,24 +5,12 @@
 
 .test {
     width: 960px;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-    height: 3000px;
-    border-radius: 10px;
-    margin: 10px auto 10px auto;
-    
-=======
->>>>>>> Stashed changes
     height: 300px;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px auto 10px auto;
     background-color: yellow;
-<<<<<<< Updated upstream
-=======
->>>>>>> 4e8fa157ad68befddcdb0db2dc7b3e1897355205
->>>>>>> Stashed changes
+
 }
 
 /* text */
