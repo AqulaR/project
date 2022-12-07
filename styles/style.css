@@ -186,6 +186,120 @@ h2 {
 }
 
 
+/* express audit */
+
+
+.express-audit-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.express-audit-text-container{
+    padding-right: 98px;
+}
+
+.express-audit-text-header {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.express-audit-text {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+    padding: 30px 12.5% 0 12.5%;
+}
+
+.audit-order-button {
+    width: 214px;
+    height: 71px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.express-audit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.express-audit-description {
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+    padding-top: 35px;
+}
+
+
+/* about our company */
+
+.about-our-company-container {
+    display: flex;
+}
+
+.about-our-company-first {
+    padding-left: 16px;
+    padding-right: 62px;
+}
+
+.about-our-company-text-header {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-our-company-text {
+    line-height: 140%;
+    text-align: justify;
+    width: 433px;
+    padding-top: 25px;
+}
+
+.about-our-company-text-second {
+    line-height: 140%;
+    text-align: justify;
+    width: 433px;
+    padding-top: 30px;
+}
+
+.about-logo-container {
+    display: flex;
+    margin-left: 8px;
+    padding-top: 45px;
+}
+
+.about-img-1c {
+    height: 105px;
+    margin-right: 10px;
+}
+
+.about-algotitm-logo {
+    border-left: 0.5px solid rgb(0, 0, 0);
+    height: 57px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about-img-algoritm {
+    width: 131px;
+    height: 41px;
+    margin-right: 50px;
+    padding-left: 15px;
+    margin-top: 7px;
+}
+
+
 /* footer */
 
 
