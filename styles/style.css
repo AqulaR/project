@@ -45,6 +45,13 @@ h2 {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 40px 0 20px 0;
+}
+
+.h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .header20 {
@@ -125,11 +132,10 @@ h2 {
 
 .main-content-wrapper {
     width: 960px;
-    height: 300px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     margin: 10px auto 10px auto;
-    /* background-color: yellow; */
+    /* background-color: yellow; 
+    border: 1px solid black;*/
 }
 
 
@@ -159,6 +165,7 @@ h2 {
 
 .btn:hover {
     cursor: pointer;
+    background-color: #f8f8f8;
 }
 
 .circle {
@@ -168,23 +175,65 @@ h2 {
     color: rgb(113, 95, 0);
 }
 
-/* our-service */
 
+/* How It Actually works*/
 
-.Our-ervices-header {
+.howitwork {
     text-align: center;
 }
 
-.Our-ervices-list {
-    padding-right: 24px;
-    width: 952px;
-    
+.howitwork-img {
+    width: 850px;
 }
 
-.about-li {
-    padding-top: 15px;
+
+/* warranty */
+
+.warranty {
+    text-align: center;
 }
 
+.block-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.block:hover {
+    transform: translate(10px);
+}
+
+.block:after {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.warranty-img {
+    width: 100px;
+    height: 100px;
+    margin: 26px 0 18px 0;
+}
+
+.warranty-img2 {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 13px 0;
+}
 
 /* express audit */
 
@@ -192,6 +241,7 @@ h2 {
 .express-audit-container {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .express-audit-text-container{
@@ -247,6 +297,7 @@ h2 {
 
 .about-our-company-container {
     display: flex;
+    margin-top: 50px;
 }
 
 .about-our-company-first {
