@@ -36,26 +36,24 @@
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 80px;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 60px;
 }
 
 h2 {
     font-size: 40px;
-    text-transform: uppercase;
     font-weight: bold;
-    margin: 40px 0 20px 0;
-}
-
-.h2 {
-    font-size: 40px;
-    font-weight: bold;
+    margin-bottom: 30px;
     text-align: center;
 }
 
+
 .header20 {
     font-size: 20px;
+    margin: 30px 0 37px 0;
 }
 /* Header */
 
@@ -124,6 +122,10 @@ h2 {
 }
 
 /* Main content */
+
+.mrgnblk {
+    margin-bottom: 50px;
+}
 
 .main-content {
     display: flex;
@@ -235,6 +237,79 @@ h2 {
     margin: 20px 0 13px 0;
 }
 
+
+/* tarifs */
+
+/* tariffs */
+
+.tariffs-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.tariffs-container-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tariffs-blocks-header {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 18px;
+    width: 200px;
+    margin: auto;
+}
+
+.tariffs-blocks-header-three {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 18px;
+    width: 220px;
+    margin: auto;
+}
+
+.tariffs-blocks-text {
+    line-height: 140%;
+    width: 220px;
+    margin: 22px 25px 0 25px;
+}
+
+.tariffs-blocks {
+    width: 250px;
+    height: 416px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.tariffs-blocks-button {
+    width: 131px;
+    height: 35px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 43px 60px 40px 59px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
 /* express audit */
 
 
@@ -258,7 +333,7 @@ h2 {
     font-size: 24px;
     text-align: center;
     padding-top: 30px;
-    padding: 30px 12.5% 0 12.5%;
+    padding: 0 12.5% 0 12.5%;
 }
 
 .audit-order-button {
@@ -314,7 +389,6 @@ h2 {
     line-height: 140%;
     text-align: justify;
     width: 433px;
-    padding-top: 25px;
 }
 
 .about-our-company-text-second {
@@ -478,6 +552,45 @@ input[type='radio']:checked::after {
 
 @media screen and (min-width: 250px) and (max-width: 337px){
 
+    h1 {
+        font-size: 32px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 23px;
+        margin-top: 2px;
+    }
+
+    .ulh {
+        display: none;
+    }
+
+    .header20 {
+        font-size: 14px;
+    }
+
+    .block-container {
+        flex-direction: column;
+        margin-left: auto;
+        width: fit-content;
+    }
+
+    .block {
+        margin-bottom: 15px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .warranty-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .warranty-img2 {
+        width: 50px;
+        height: 50px;
+    }
     .logo-container {
         display: none;
     }
