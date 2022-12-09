@@ -1,0 +1,83 @@
+                <div class="tables">
+                    <div class="tables-ooo-container-tarif-complex">
+                        <table border="1" cellspacing="0">
+                            <caption>Общество с ограниченной ответственностью</caption>
+                                <tr>
+                                    <th>Система налогооблажения</th>
+                                    <th>Количество документов</th>
+                                    <th>Количество сотрудников</th>
+                                    <th>Стоимость в месяц руб.</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" style="font-weight:bold">УСН "Доходы"</td>
+                                    <td>до 10 операций</td>
+                                    <td>1</td>
+                                    <td>4085.00</td>
+                                </tr>
+                                <tr>
+                                    <td>до 30 операций</td>
+                                    <td>2</td>
+                                    <td>10128.00</td>
+                                </tr>
+                                <tr>
+                                    <td>до 50 операций</td>
+                                    <td>3</td>
+                                    <td>17773.00</td>
+                                </tr>
+                                <tr>
+                                    <td>до 80 операций</td>
+                                    <td>3</td>
+                                    <td>28453.00</td>
+                                </tr>
+                        </table>
+                        <table border="1" cellspacing="0">
+                                <tr>
+                                    <td rowspan="4" style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                    <td>до 10 операций</td>
+                                    <td>1</td>
+                                    <td>4765.00</td>
+                                </tr>
+                                <tr>
+                                    <td>до 30 операций</td>
+                                    <td>2</td>
+                                    <td>11858.00</td>
+                                </tr>
+                                <tr>
+                                    <td>до 50 операций</td>
+                                    <td>3</td>
+                                    <td>20858.00</td>
+                                </tr>
+                                <tr>
+                                    <td>до 80 операций</td>
+                                    <td>3</td>
+                                    <td>33570.00</td>
+                                </tr>
+                        </table>
+                        <table border="1" cellspacing="0">
+                            <tr>
+                                <td rowspan="4" style="font-weight:bold">ОСН</td>
+                                <td>до 10 операций</td>
+                                <td>1</td>
+                                <td>6175.00</td>
+                            </tr>
+                            <tr>
+                                <td>до 30 операций</td>
+                                <td>2</td>
+                                <td>15458.00</td>
+                            </tr>
+                            <tr>
+                                <td>до 50 операций</td>
+                                <td>3</td>
+                                <td>27283.00</td>
+                            </tr>
+                            <tr>
+                                <td>до 80 операций</td>
+                                <td>3</td>
+                                <td>44233.00</td>
+                            </tr>
+                        </table>
+                        <div class="services-not-included-in-the-tariff">
+                            Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                        </div>
+                    </div>
+                </div>
