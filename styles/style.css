@@ -3,6 +3,20 @@
     font: 16px 'PTSans-Regular', sans-serif;
 }
 
+.body {
+    overflow: visible;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+b {
+    font-size: 25px;
+}
+body::-webkit-scrollbar {
+    width: 0;
+  }
 /* text */
 
 .mrgn10 {
@@ -46,10 +60,12 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 30px;
     text-align: center;
 }
 
+.h2 {
+    margin-bottom: 30px;
+}
 
 .header20 {
     font-size: 20px;
@@ -167,7 +183,7 @@ h2 {
 
 .btn:hover {
     cursor: pointer;
-    background-color: #f8f8f8;
+    background-color: #f3f3f3;
 }
 
 .circle {
@@ -238,9 +254,8 @@ h2 {
 }
 
 
-/* tarifs */
-
 /* tariffs */
+
 
 .tariffs-container {
     display: flex;
@@ -248,45 +263,35 @@ h2 {
     margin-top: 20px;
 }
 
-.tariffs-container-header {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
-
 .tariffs-blocks-header {
     font-size: 20px;
     font-weight: bold;
-    line-height: 140%;
     text-align: center;
     padding-top: 30px;
     border-bottom: 1px solid black;
     padding-bottom: 18px;
     width: 200px;
-    margin: auto;
-}
-
-.tariffs-blocks-header-three {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 140%;
-    text-align: center;
-    padding-top: 30px;
-    border-bottom: 1px solid black;
-    padding-bottom: 18px;
-    width: 220px;
-    margin: auto;
+    margin: 0 auto 0 auto;
 }
 
 .tariffs-blocks-text {
     line-height: 140%;
+    width: 190px;
+    margin: 20px auto 0 auto;
+    height: 135px;
+    margin-bottom: 50px;
+    
+}
+
+.three {
     width: 220px;
-    margin: 22px 25px 0 25px;
 }
 
 .tariffs-blocks {
     width: 250px;
     height: 416px;
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;
     box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -297,18 +302,26 @@ h2 {
     height: 35px;
 
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 7px;
 
-    display: flex;
-    align-items: center;
     text-align: center;
-    margin: 43px 60px 40px 59px;
+    margin: auto;
     cursor: pointer;
 
     font-weight: bold;
 }
+
+.tariffs-blocks-button:hover {
+    cursor: pointer;
+    background-color: #f3f3f3;
+}
+
+.tariffs-blocks-price {
+    font-size: 20px;
+    text-align: center;
+}
+
 
 /* express audit */
 
@@ -548,7 +561,81 @@ input[type='radio']:checked::after {
     margin-top: 10%;
 }
 
+
+/* Модальное окно */
+
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+    background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание */
+.modal-content {
+    border-radius: 10px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 900px;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Добавить анимацию */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* Кнопка закрытия */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+}
+  
+.modal-body {padding: 2px 16px;}
+  
+.modal-footer {
+    border-radius: 0 0 10px 10px;
+    padding: 2px 16px;
+}
+
+
 /*  Медиатеги   */
+
 
 @media screen and (min-width: 250px) and (max-width: 337px){
 

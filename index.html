@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/aboutus.css">
     </head>
-    <body>
+    <body class="body">
         <div class="header">
             <a href="./index.html" style="text-decoration: none;">
                 <div class="logo-container">
@@ -51,7 +51,7 @@
                     <li class="additional-text lih">КАДРОВЫЙ УЧЕТ</li>
                     <li class="additional-text lih">НАЛОГОВЫЙ УЧЕТ</li>
                 </ul>
-                <h2>УЧЁТ БИЗНЕСА НАМ</h2>
+                <h2 class="h2">УЧЁТ БИЗНЕСА НАМ</h2>
                 <p class="header20">Сосредоточьтесь на управлении бизнеса.<br>
                     Учёт и отчётность мы возьмём на себя.</p>
                 <button class="btn">
@@ -60,7 +60,7 @@
             </div>
             <div class="main-content-wrapper">
                 <div class="warranty mrgnblk">
-                    <h2>Гарантируем</h2>
+                    <h2 class="h2">Гарантируем</h2>
                     <div class="block-container">
                         <div class="block">
                             <img src="./img/quality.png" alt="" class="warranty-img">
@@ -77,11 +77,11 @@
                     </div>
                 </div>
                 <div class="howitwork mrgnblk">
-                    <h2>Как это работает</h2>
+                    <h2 class="h2">Как это работает</h2>
                     <img src="./img/howitwork.png" alt="" class="howitwork-img">
                 </div>
                 <div class="tariffs">
-                    <div class="tariffs-container-header">Тарифы</div>
+                    <h2 class="h2">Тарифы</h2>
                     <div class="tariffs-container">
                         <div class="tariffs-blocks">
                             <div class="tariffs-blocks-header">
@@ -90,11 +90,26 @@
                             <div class="tariffs-blocks-text">
                                 Аутсорсер сам заводит все документы в программу и сам сдает отчетность. Клиент предоставляет только первичные документы.
                             </div>
-                            <div class="tariffs-blocks-price" style="font-size: 20px;line-height: 140%; width: 200px; margin: 40px 79px 0 79px;">
-                                От - 2000р
+                            <div class="tariffs-blocks-price">
+                                от <b>1130р</b>
                             </div>
-                            <div>
-                                <button class="tariffs-blocks-button">Подробнее..</button>
+                            <button id="myBtn" class="tariffs-blocks-button">Подробнее</button>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                            <!-- Модальное содержание -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Тариф комплексный</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Некоторый текст в модальном теле</p>
+                                        <p>Какой-то другой текст...</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Модальный подвал</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tariffs-blocks">
@@ -104,25 +119,55 @@
                             <div class="tariffs-blocks-text">
                                 Клиент сам заносит все документы в программу. Аутсорсер контролирует и сдает отчетность.
                             </div>
-                            <div class="tariffs-blocks-price" style="font-size: 20px;line-height: 140%; width: 200px; margin: 84px 79px 0 79px;">
-                                От - 2000р
+                            <div class="tariffs-blocks-price">
+                                от <b>1958р</b>
                             </div>
-                            <div>
-                                <button class="tariffs-blocks-button">Подробнее..</button>
+                            <button id="myBtn2" class="tariffs-blocks-button">Подробнее</button>
+                            <!-- The Modal -->
+                            <div id="myModal2" class="modal">
+                            <!-- Модальное содержание -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Тариф отчётность</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Некоторый текст в модальном теле</p>
+                                        <p>Какой-то другой текст...</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Модальный подвал</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tariffs-blocks">
-                            <div class="tariffs-blocks-header-three">
+                            <div class="tariffs-blocks-header three">
                                 "Нулевая отчетность"
                             </div>
-                            <div class="tariffs-blocks-text">
+                            <div class="tariffs-blocks-text three">
                                 Аутсорсер  сдает отчетность.
                             </div>
-                            <div class="tariffs-blocks-price" style="font-size: 20px;line-height: 140%; width: 200px; margin: 150px 79px 0 79px;">
-                                От - 2000р
+                            <div class="tariffs-blocks-price">
+                                от <b>450р</b>
                             </div>
-                            <div>
-                                <button class="tariffs-blocks-button">Подробнее..</button>
+                            <button id="myBtn3" class="tariffs-blocks-button">Подробнее</button>
+                            <!-- The Modal -->
+                            <div id="myModal3" class="modal">
+                            <!-- Модальное содержание -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Тариф нулевая отчётность</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Некоторый текст в модальном теле</p>
+                                        <p>Какой-то другой текст...</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Модальный подвал</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,7 +178,7 @@
                             <img src="img/Kalkulyator_transp.png" style="width: 131px; height: 423px; padding-left: 117px;">
                         </div>
                         <div class="express-audit-text-container">
-                            <h2>Экспресс-аудит бухучета</h2>
+                            <h2 class="h2">Экспресс-аудит бухучета</h2>
                             <div class="express-audit-text">
                                 Проверьте учет в вашей компании  на ошибки. В течении дня вы получите отчет с рекомендациями по улучшению ведения учета. 
                             </div>
@@ -179,5 +224,66 @@
             </div>
         </div>
         <div class="footer"></div>
+        <script>
+            let span = document.getElementsByClassName("close");
+            let body = document.getElementsByClassName("body")[0];
+1            
+            let modal1 = document.getElementById("myModal");
+            let btn1 = document.getElementById("myBtn");
+
+            let modal2 = document.getElementById("myModal2");
+            let btn2 = document.getElementById("myBtn2");
+
+            let modal3 = document.getElementById("myModal3");
+            let btn3 = document.getElementById("myBtn3");
+
+            btn1.onclick = function() {
+                modal1.style.display = "block";
+                body.style.overflow = "hidden"
+            }
+            
+            span[0].onclick = function() {
+                modal1.style.display = "none";
+                body.style.overflow = "visible"
+            }
+            
+
+            btn2.onclick = function() {
+                modal2.style.display = "block";
+                body.style.overflow = "hidden"
+            }
+            
+            span[1].onclick = function() {
+                modal2.style.display = "none";
+                body.style.overflow = "visible"
+            }
+            
+
+            btn3.onclick = function() {
+                modal3.style.display = "block";
+                body.style.overflow = "hidden"
+            }
+            
+            span[2].onclick = function() {
+                modal3.style.display = "none";
+                body.style.overflow = "visible"
+            }
+
+            
+            window.onclick = function(event) {
+              if (event.target == modal1) {
+                modal1.style.display = "none";
+                body.style.overflow = "visible"
+              }
+              if (event.target == modal2) {
+                modal2.style.display = "none";
+                body.style.overflow = "visible"
+              }
+              if (event.target == modal3) {
+                modal3.style.display = "none";
+                body.style.overflow = "visible"
+              }
+            }
+        </script>
     </body>
 </html>
