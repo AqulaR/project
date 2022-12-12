@@ -59,26 +59,28 @@
                 </button>
             </div>
             <div class="main-content-wrapper">
-                <div class="warranty mrgnblk">
-                    <h2 class="h2">Гарантируем</h2>
-                    <div class="block-container">
-                        <div class="block">
-                            <img src="./img/quality.png" alt="" class="warranty-img">
-                            <div>Качество работы</div>
-                        </div>
-                        <div class="block">
-                            <img src="./img/responsibility.png" alt="" class="warranty-img2">
-                            <div>Ответственность за <br> результат</div>
-                        </div>
-                        <div class="block">
-                            <img src="./img/defense.png" alt="" class="warranty-img">
-                            <div>Безопасность</div>
+                <div class="borderh mrgnblk">
+                    <div class="warranty mrgnblk">
+                        <h2 class="h2">Гарантируем</h2>
+                        <div class="block-container">
+                            <div class="block">
+                                <img src="./img/quality.png" alt="" class="warranty-img">
+                                <div>Качество работы</div>
+                            </div>
+                            <div class="block">
+                                <img src="./img/responsibility.png" alt="" class="warranty-img2">
+                                <div>Ответственность за <br> результат</div>
+                            </div>
+                            <div class="block">
+                                <img src="./img/defense.png" alt="" class="warranty-img">
+                                <div>Безопасность</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="howitwork mrgnblk">
-                    <h2 class="h2">Как это работает</h2>
-                    <img src="./img/howitwork.png" alt="" class="howitwork-img">
+                    <div class="howitwork">
+                        <h2 class="h2">Как это работает</h2>
+                        <img src="./img/howitwork.png" alt="" class="howitwork-img">
+                    </div>
                 </div>
                 <div class="tariffs">
                     <h2 class="h2">Тарифы</h2>
@@ -721,6 +723,8 @@
             let modal = document.querySelectorAll('[id = "myModal"]');
             let ipb = document.querySelectorAll('[id = "ip"]');
             let ooob = document.querySelectorAll('[id = "ooo"]');
+            let ipbtn = document.getElementsByClassName("ip");
+            let ooobtn = document.getElementsByClassName("ooo");
 
             for (let i = 0; i < modal.length; i++) {
                 ooob[i].style.display = 'none';
@@ -741,15 +745,19 @@
             function ip(elem) {
                 for (let i = 0; i < modal.length; i++) {
                     ipb[i].style.display = 'block';
+                    ooobtn[i].style.backgroundColor = 'white';
                     ooob[i].style.display = 'none';
                 }
+                elem.style.backgroundColor = '#f3f3f3';
             }
 
             function ooo(elem) {
                 for (let i = 0; i < modal.length; i++) {
                     ipb[i].style.display = 'none';
+                    ipbtn[i].style.backgroundColor = 'white';
                     ooob[i].style.display = 'block';
                 }
+                elem.style.backgroundColor = '#f3f3f3';
             }
 
             document.addEventListener("click", function(evt) {
