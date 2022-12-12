@@ -1,22 +1,21 @@
 * {
     margin: 0;
     font: 16px 'PTSans-Regular', sans-serif;
+    scrollbar-width: none;
 }
 
 .body {
     overflow: visible;
 }
 
-* {
-    scrollbar-width: none;
-}
-
 b {
     font-size: 25px;
 }
+
 body::-webkit-scrollbar {
     width: 0;
-  }
+}
+
 /* text */
 
 .mrgn10 {
@@ -569,7 +568,7 @@ input[type='radio']:checked::after {
     display: none; /* Скрыто по умолчанию */
     position: fixed; /* Оставаться на месте */
     z-index: 1; /* Сидеть на вершине */
-    padding-top: 100px; /* Расположение коробки */
+    padding-top: 70px; /* Расположение коробки */
     left: 0;
     top: 0;
     width: 100%; /* Полная ширина */
@@ -591,7 +590,8 @@ input[type='radio']:checked::after {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    padding-bottom: 110px;
 }
 
 /* Добавить анимацию */
@@ -607,10 +607,12 @@ input[type='radio']:checked::after {
 
 /* Кнопка закрытия */
 .close {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border: 0;
+    background-color: white;
 }
 
 .close:hover,
@@ -625,6 +627,8 @@ input[type='radio']:checked::after {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 600px;
+    margin: 0 auto 0 auto;
 }
   
 .modal-body {padding: 2px 16px;}
@@ -632,6 +636,45 @@ input[type='radio']:checked::after {
 .modal-footer {
     border-radius: 0 0 10px 10px;
     padding: 2px 16px;
+}
+
+
+/* tables */
+
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    caption-side: top;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-color: rgba(0, 0, 0, .7);
+    table-layout: fixed;
+    margin-bottom: 25px;
+}
+
+td {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+}
+
+.services-not-included-in-the-tariff {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .9);
+    text-align: left;
+    line-height: 140%;
+    width: 75%;
+
 }
 
 

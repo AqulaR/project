@@ -93,21 +93,295 @@
                             <div class="tariffs-blocks-price">
                                 от <b>1130р</b>
                             </div>
-                            <button id="myBtn" class="tariffs-blocks-button">Подробнее</button>
+                            <button class="tariffs-blocks-button" onclick="opn(this)" id="0">Подробнее</button>
                             <!-- The Modal -->
                             <div id="myModal" class="modal">
                             <!-- Модальное содержание -->
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <span class="close">&times;</span>
+                                        <button class="close" onclick="gg(this)">&times;</button>
                                         <h2>Тариф Комплексный</h2>
                                     </div>
-                                    <div class="modal-body">
-                                        <p>Некоторый текст в модальном теле</p>
-                                        <p>Какой-то другой текст...</p>
+                                    <div class="tariff_btn">
+                                        <button class="ip" onclick="ip(this)">ИП</button>
+                                        <button class="ooo" onclick="ooo(this)">ООО</button>
                                     </div>
-                                    <div class="modal-footer">
-                                        <h3>Модальный подвал</h3>
+                                    <div class="modal-body">
+                                        <div class="tables">
+                                            <div id="ip">
+                                                <div class="tables-ip-container-tarif-complex">
+                                                    <table border="1" cellspacing="0">
+                                                        <caption>Индивидуальный предприниматель с работниками</caption>
+                                                            <tr>
+                                                                <th>Система налогооблажения</th>
+                                                                <th>Количество документов</th>
+                                                                <th>Количество сотрудников</th>
+                                                                <th>Стоимость в месяц руб.</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="4" style="font-weight:bold">УСН "Доходы"</td>
+                                                                <td>до 10 операций</td>
+                                                                <td>1</td>
+                                                                <td>4085.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 30 операций</td>
+                                                                <td>2</td>
+                                                                <td>10128.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 50 операций</td>
+                                                                <td>3</td>
+                                                                <td>17773.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 80 операций</td>
+                                                                <td>3</td>
+                                                                <td>28453.00</td>
+                                                            </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                            <tr>
+                                                                <td rowspan="4" style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                                <td>до 10 операций</td>
+                                                                <td>1</td>
+                                                                <td>4765.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 30 операций</td>
+                                                                <td>2</td>
+                                                                <td>11858.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 50 операций</td>
+                                                                <td>3</td>
+                                                                <td>20858.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 80 операций</td>
+                                                                <td>3</td>
+                                                                <td>33570.00</td>
+                                                            </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                        <tr>
+                                                            <td rowspan="4" style="font-weight:bold">Патент</td>
+                                                            <td>до 10 операций</td>
+                                                            <td>1</td>
+                                                            <td>3350.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 30 операций</td>
+                                                            <td>2</td>
+                                                            <td>8255.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 50 операций</td>
+                                                            <td>3</td>
+                                                            <td>14430.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 80 операций</td>
+                                                            <td>3</td>
+                                                            <td>22905.00</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                        <tr>
+                                                            <td rowspan="4" style="font-weight:bold">Патент+УСН "Доходы"</td>
+                                                            <td>до 10 операций</td>
+                                                            <td>1</td>
+                                                            <td>5610.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 30 операций</td>
+                                                            <td>2</td>
+                                                            <td>14018.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 50 операций</td>
+                                                            <td>3</td>
+                                                            <td>24713.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 80 операций</td>
+                                                            <td>3</td>
+                                                            <td>39968.00</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="tables-ip-container-tarif-complex-no-employees">
+                                                    <table border="1" cellspacing="0">
+                                                        <caption>Индивидуальный предприниматель без работников</caption>
+                                                            <tr>
+                                                                <th>Система налогооблажения</th>
+                                                                <th>Количество документов</th>
+                                                                <th>Стоимость в месяц руб.</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="4" style="font-weight:bold">УСН "Доходы"</td>
+                                                                <td>до 10 операций</td>
+                                                                <td>1424.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 30 операций</td>
+                                                                <td>3631.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 50 операций</td>
+                                                                <td>6479.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 80 операций</td>
+                                                                <td>10751.00</td>
+                                                            </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                            <tr>
+                                                                <td rowspan="4" style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                                <td>до 10 операций</td>
+                                                                <td>1696</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 30 операций</td>
+                                                                <td>4323.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 50 операций</td>
+                                                                <td>7713.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 80 операций</td>
+                                                                <td>12798.00</td>
+                                                            </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                        <tr>
+                                                            <td rowspan="4" style="font-weight:bold">Патент</td>
+                                                            <td>до 10 операций</td>
+                                                            <td>1130.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 30 операций</td>
+                                                            <td>2882.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 50 операций</td>
+                                                            <td>5142.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 80 операций</td>
+                                                            <td>8532.00</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                        <tr>
+                                                            <td rowspan="4" style="font-weight:bold">Патент+УСН "Доходы"</td>
+                                                            <td>до 10 операций</td>
+                                                            <td>2034.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 30 операций</td>
+                                                            <td>5187.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 50 операций</td>
+                                                            <td>9255.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 80 операций</td>
+                                                            <td>15357.00</td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="services-not-included-in-the-tariff">
+                                                        Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="ooo">
+                                                <div class="tables-ooo-container-tarif-complex">
+                                                    <table border="1" cellspacing="0">
+                                                        <caption>Общество с ограниченной ответственностью</caption>
+                                                            <tr>
+                                                                <th>Система налогооблажения</th>
+                                                                <th>Количество документов</th>
+                                                                <th>Количество сотрудников</th>
+                                                                <th>Стоимость в месяц руб.</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="4" style="font-weight:bold">УСН "Доходы"</td>
+                                                                <td>до 10 операций</td>
+                                                                <td>1</td>
+                                                                <td>4085.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 30 операций</td>
+                                                                <td>2</td>
+                                                                <td>10128.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 50 операций</td>
+                                                                <td>3</td>
+                                                                <td>17773.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 80 операций</td>
+                                                                <td>3</td>
+                                                                <td>28453.00</td>
+                                                            </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                            <tr>
+                                                                <td rowspan="4" style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                                <td>до 10 операций</td>
+                                                                <td>1</td>
+                                                                <td>4765.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 30 операций</td>
+                                                                <td>2</td>
+                                                                <td>11858.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 50 операций</td>
+                                                                <td>3</td>
+                                                                <td>20858.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>до 80 операций</td>
+                                                                <td>3</td>
+                                                                <td>33570.00</td>
+                                                            </tr>
+                                                    </table>
+                                                    <table border="1" cellspacing="0">
+                                                        <tr>
+                                                            <td rowspan="4" style="font-weight:bold">ОСН</td>
+                                                            <td>до 10 операций</td>
+                                                            <td>1</td>
+                                                            <td>6175.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 30 операций</td>
+                                                            <td>2</td>
+                                                            <td>15458.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 50 операций</td>
+                                                            <td>3</td>
+                                                            <td>27283.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>до 80 операций</td>
+                                                            <td>3</td>
+                                                            <td>44233.00</td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="services-not-included-in-the-tariff">
+                                                        Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -122,21 +396,130 @@
                             <div class="tariffs-blocks-price">
                                 от <b>1958р</b>
                             </div>
-                            <button id="myBtn2" class="tariffs-blocks-button">Подробнее</button>
+                            <button class="tariffs-blocks-button" onclick="opn(this)" id="1">Подробнее</button>
                             <!-- The Modal -->
-                            <div id="myModal2" class="modal">
+                            <div id="myModal" class="modal">
                             <!-- Модальное содержание -->
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <span class="close">&times;</span>
+                                        <button class="close" onclick="gg(this)">&times;</button>
                                         <h2>Тариф Отчётность</h2>
                                     </div>
-                                    <div class="modal-body">
-                                        <p>Некоторый текст в модальном теле</p>
-                                        <p>Какой-то другой текст...</p>
+                                    <div class="tariff_btn">
+                                        <button class="ip" onclick="ip(this)">ИП</button>
+                                        <button class="ooo" onclick="ooo(this)">ООО</button>
                                     </div>
-                                    <div class="modal-footer">
-                                        <h3>Модальный подвал</h3>
+                                    <div class="modal-body">
+                                        <div id="ip">
+                                            <div class="tables-ip-container-tarif-reporting">
+                                                <table border="1" cellspacing="0">
+                                                    <caption>Тариф "Отчетность"</caption>
+                                                        <tr>
+                                                            <th>Система налогооблажения</th>
+                                                            <th>
+                                                                ИП с работниками.
+                                                                Стоимость в месяц
+                                                            </th>
+                                                            <th>
+                                                                ИП без работников.
+                                                                Стоимость в месяц
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы"</td>
+                                                            <td>4895.00</td>
+                                                            <td>1958.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                            <td>5825.00</td>
+                                                            <td>2330.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент</td>
+                                                            <td>3885.00</td>
+                                                            <td>1554.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы"</td>
+                                                            <td>6990.00</td>
+                                                            <td>2796.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы-расходы"</td>
+                                                            <td>6990.00</td>
+                                                            <td>2796.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+ОСН</td>
+                                                            <td>8155.00</td>
+                                                            <td>3262.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ОСН</td>
+                                                            <td>7765.00</td>
+                                                            <td>3106.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ЕСХН</td>
+                                                            <td>5825.00</td>
+                                                            <td>2330.00</td>
+                                                        </tr>
+                                                </table>
+                                                <div class="services-not-included-in-the-tariff">
+                                                    Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ooo">
+                                            <div class="tables-ooo-container-tarif-reporting">
+                                                <table border="1" cellspacing="0">
+                                                    <caption>Тариф "Отчетность"</caption>
+                                                        <tr>
+                                                            <th>Система налогооблажения</th>
+                                                            <th>
+                                                                ООО с работниками.
+                                                                Стоимость в месяц
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы"</td>
+                                                            <td>4895.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                            <td>5825.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент</td>
+                                                            <td>3885.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы"</td>
+                                                            <td>6990.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы-расходы"</td>
+                                                            <td>6990.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+ОСН</td>
+                                                            <td>8155.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ОСН</td>
+                                                            <td>7765.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ЕСХН</td>
+                                                            <td>5825.00</td>
+                                                        </tr>
+                                                </table>
+                                                <div class="services-not-included-in-the-tariff">
+                                                    Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -151,21 +534,130 @@
                             <div class="tariffs-blocks-price">
                                 от <b>450р</b>
                             </div>
-                            <button id="myBtn3" class="tariffs-blocks-button">Подробнее</button>
+                            <button class="tariffs-blocks-button" onclick="opn(this)" id="2">Подробнее</button>
                             <!-- The Modal -->
-                            <div id="myModal3" class="modal">
+                            <div id="myModal" class="modal">
                             <!-- Модальное содержание -->
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <span class="close">&times;</span>
+                                        <button class="close" onclick="gg(this)">&times;</button>
                                         <h2>Тариф Нулевая Отчётность</h2>
                                     </div>
-                                    <div class="modal-body">
-                                        <p>Некоторый текст в модальном теле</p>
-                                        <p>Какой-то другой текст...</p>
+                                    <div class="tariff_btn">
+                                        <button class="ip" onclick="ip(this)">ИП</button>
+                                        <button class="ooo" onclick="ooo(this)">ООО</button>
                                     </div>
-                                    <div class="modal-footer">
-                                        <h3>Модальный подвал</h3>
+                                    <div class="modal-body">
+                                        <div id="ip">
+                                            <div class="tables-ip-container-tarif-zero-reporting">
+                                                <table border="1" cellspacing="0">
+                                                    <caption>Тариф "Нулевая Отчетность"</caption>
+                                                        <tr>
+                                                            <th>Система налогооблажения</th>
+                                                            <th>
+                                                                ИП с работниками.
+                                                                Стоимость в месяц
+                                                            </th>
+                                                            <th>
+                                                                ИП без работников.
+                                                                Стоимость в месяц
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы"</td>
+                                                            <td>1100.00</td>
+                                                            <td>450.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                            <td>1300.00</td>
+                                                            <td>500.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент</td>
+                                                            <td>850.00</td>
+                                                            <td>350.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы"</td>
+                                                            <td>1550.00</td>
+                                                            <td>600.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы-расходы"</td>
+                                                            <td>1550.00</td>
+                                                            <td>600.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+ОСН</td>
+                                                            <td>1800.00</td>
+                                                            <td>700.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ОСН</td>
+                                                            <td>1700.00</td>
+                                                            <td>700.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ЕСХН</td>
+                                                            <td>1300.00</td>
+                                                            <td>500.00</td>
+                                                        </tr>
+                                                </table>
+                                                <div class="services-not-included-in-the-tariff">
+                                                    Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ooo">
+                                            <div class="tables-ooo-container-tarif-zero-reporting">
+                                                <table border="1" cellspacing="0">
+                                                    <caption>Тариф "Нулевая Отчетность"</caption>
+                                                        <tr>
+                                                            <th>Система налогооблажения</th>
+                                                            <th>
+                                                                ООО с работниками.
+                                                                Стоимость в месяц
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы"</td>
+                                                            <td>1100.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">УСН "Доходы-расходы"</td>
+                                                            <td>1300.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент</td>
+                                                            <td>850.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы"</td>
+                                                            <td>1550.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+УСН "Доходы-расходы"</td>
+                                                            <td>1550.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">Патент+ОСН</td>
+                                                            <td>1800.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ОСН</td>
+                                                            <td>1700.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-weight:bold">ЕСХН</td>
+                                                            <td>1300.00</td>
+                                                        </tr>
+                                                </table>
+                                                <div class="services-not-included-in-the-tariff">
+                                                    Услуги, не вошедшие в тариф, оцениваются по прейскуранту: в часах, документах и других конкретных единицах. Перечень дополнительных услуг подбирается индивидуально для каждого клиента. Дополнительные услуги оказываются только после согласования с Вами их объема и стоимости.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -225,65 +717,50 @@
         </div>
         <div class="footer"></div>
         <script>
-            let span = document.getElementsByClassName("close");
             let body = document.getElementsByClassName("body")[0];
-1            
-            let modal1 = document.getElementById("myModal");
-            let btn1 = document.getElementById("myBtn");
+            let modal = document.querySelectorAll('[id = "myModal"]');
+            let ipb = document.querySelectorAll('[id = "ip"]');
+            let ooob = document.querySelectorAll('[id = "ooo"]');
 
-            let modal2 = document.getElementById("myModal2");
-            let btn2 = document.getElementById("myBtn2");
+            for (let i = 0; i < modal.length; i++) {
+                ooob[i].style.display = 'none';
+            }
 
-            let modal3 = document.getElementById("myModal3");
-            let btn3 = document.getElementById("myBtn3");
+            function opn(elem) {
+                modal[elem.id].style.display = 'block';
+                body.style.overflow = "hidden";
+            }
 
-            btn1.onclick = function() {
-                modal1.style.display = "block";
-                body.style.overflow = "hidden"
-            }
-            
-            span[0].onclick = function() {
-                modal1.style.display = "none";
-                body.style.overflow = "visible"
-            }
-            
-
-            btn2.onclick = function() {
-                modal2.style.display = "block";
-                body.style.overflow = "hidden"
-            }
-            
-            span[1].onclick = function() {
-                modal2.style.display = "none";
-                body.style.overflow = "visible"
-            }
-            
-
-            btn3.onclick = function() {
-                modal3.style.display = "block";
-                body.style.overflow = "hidden"
-            }
-            
-            span[2].onclick = function() {
-                modal3.style.display = "none";
+            function gg(elem) {
+                for (let i = 0; i < modal.length; i++) {
+                    modal[i].style.display = 'none';
+                }
                 body.style.overflow = "visible"
             }
 
-            
-            window.onclick = function(event) {
-              if (event.target == modal1) {
-                modal1.style.display = "none";
-                body.style.overflow = "visible"
-              }
-              if (event.target == modal2) {
-                modal2.style.display = "none";
-                body.style.overflow = "visible"
-              }
-              if (event.target == modal3) {
-                modal3.style.display = "none";
-                body.style.overflow = "visible"
-              }
+            function ip(elem) {
+                for (let i = 0; i < modal.length; i++) {
+                    ipb[i].style.display = 'block';
+                    ooob[i].style.display = 'none';
+                }
             }
+
+            function ooo(elem) {
+                for (let i = 0; i < modal.length; i++) {
+                    ipb[i].style.display = 'none';
+                    ooob[i].style.display = 'block';
+                }
+            }
+
+            document.addEventListener("click", function(evt) {
+                for (let i = 0; i < modal.length; i++) {
+                    if (evt.target == modal[i]){
+                        modal[i].style.display = 'none'; 
+                        body.style.overflow = "visible";
+                    }
+                }
+            }); 
+
         </script>
     </body>
 </html>
