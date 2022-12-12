@@ -195,43 +195,6 @@ h2 {
 
 /* How It Actually works*/
 
-.tariff_btn {
-    width: 600px;
-    margin: 10px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.ip {
-    width: 49%;
-    border: solid black;
-    border-width: 1px 1px 0 1px;
-    border-radius: 7px 7px 0 0;
-    background-color: #ffde41;
-}
-
-.ip:hover {
-    cursor: pointer;
-}
-
-.ooo {
-    width: 49%;
-    border: solid black;
-    border-width: 1px 1px 0 1px;
-    border-radius: 7px 7px 0 0;
-    background-color: white;
-}
-
-.ooo:hover {
-    cursor: pointer;
-}
-
-.borderh {
-    border: solid rgba(0, 0, 0, 0.2);
-    border-width: 0px 1px 1px 1px;
-    padding-bottom: 20px;
-}
-
 .howitwork {
     text-align: center;
 }
@@ -357,7 +320,6 @@ h2 {
     font-size: 20px;
     text-align: center;
 }
-
 
 /* express audit */
 
@@ -661,11 +623,10 @@ input[type='radio']:checked::after {
 
 .modal-header {
     border-radius: 10px 10px 0 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.5);*/
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 600px;
-    margin: 0 auto 0 auto;
+    padding: 10px 16px;
 }
   
 .modal-body {padding: 2px 16px;}
@@ -673,6 +634,48 @@ input[type='radio']:checked::after {
 .modal-footer {
     border-radius: 0 0 10px 10px;
     padding: 2px 16px;
+}
+
+.tariff_btn {
+    width: 600px;
+    margin-top: 10px;
+    padding: 0 16px;
+}
+
+.ip {
+    width: 100px;
+    height: 30px;
+    border: solid black;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 7px;
+    background-color: #ffde41;
+}
+
+.ip:hover {
+    cursor: pointer;
+}
+
+.ooo {
+    width: 100px;
+    height: 30px;
+    border: solid black;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.ooo:hover {
+    cursor: pointer;
+}
+
+.borderh {
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 0px 1px 1px 1px;
+    padding-bottom: 20px;
+}
+
+.tariff_name {
+    text-align: start;
 }
 
 
