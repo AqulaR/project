@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./styles/aboutus.css">
     </head>
     <body class="body">
-        <div class="header">
+        <div class="header v" id="main-anchor">
             <a href="./index.html" style="text-decoration: none;">
                 <div class="logo-container">
                     <div class="1c-logo">
@@ -42,6 +42,40 @@
                     <a href="#" class="links bold" style="margin: 0;">Контакты</a>
                 </div>
             </div>
+        </div>
+        <div class="right-anchors-container">
+            <ul>
+                <li class="active-anchor">
+                    <div class="block-anchor">
+                        <a class="hover" href="#main-anchor"></a> 
+                        <span class="hidden">Главная</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="block-anchor">
+                        <a class="hover" href="#"></a> 
+                        <span class="hidden">Плюсы</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="block-anchor">
+                        <a class="hover" href="#tarif-anchor"></a> 
+                        <span class="hidden">Тарифы</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="block-anchor">
+                        <a class="hover" href="#audit-anchor"></a> 
+                        <span class="hidden">Аудит</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="block-anchor">
+                        <a class="hover" href="#about-us-anchor"></a> 
+                        <span class="hidden">О нас</span>
+                    </div>
+                </li>
+            </ul>
         </div>
         <div class="main-content">
             <div class="bgimage center-text">
@@ -82,7 +116,7 @@
                         <img src="./img/howitwork.png" alt="" class="howitwork-img">
                     </div>
                 </div>
-                <div class="bloknot" id="tarif-anchor"></div>
+                <div class="bloknot v" id="tarif-anchor"></div>
                 <div class="tariffs">
                     <div class="tarriff-border">
                         <h2 class="h2 pdng">Тарифы</h2>
@@ -664,7 +698,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="express-audit mrgnblk" id="audit-anchor">
+                <div class="express-audit mrgnblk v" id="audit-anchor">
                     <div class="express-audit-container">
                         <div class="express-audit-image">
                             <img src="img/Kalkulyator_transp.png" style="width: 131px; height: 423px; padding-left: 117px;">
@@ -684,7 +718,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-our-company mrgnblk" id="about-us-anchor">
+                <div class="about-our-company mrgnblk v" id="about-us-anchor">
                     <div class="about-our-company-container">
                         <div class="about-our-company-first">
                             <h2>О нашей компании</h2>
@@ -788,7 +822,38 @@
                     }
                 }
             }); 
+            
 
+            const anchors = document.querySelectorAll('a.hover')
+
+            for (let anchor of anchors) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+                
+                const blockID = anchor.getAttribute('href')
+                
+                document.querySelector(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+                })
+            })
+            }
+
+            const doc = window.document;
+            const links = doc.querySelectorAll("a.hover"); // любой нужный селектор
+            console.log(links);
+            const linksCount = links.length;
+            const currentURL = doc.querySelectorAll("div.v");
+            console.log(currentURL);
+
+            for (let i = 0; i < linksCount; i++) {
+            let linkURL = links[i].href;
+
+            // linkURL == currentURL, если не надо светить уровни выше
+            if (currentURL[i].id == linkURL) {
+                links[i].classList.add("active");
+                }
+            }
         </script>
     </body>
 </html>
