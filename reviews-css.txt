@@ -1,0 +1,60 @@
+/* reviews */
+
+.reviews-container {
+}
+
+.itc-slider__item {
+    width: 882px;
+    height: 533px;
+    background-color: rgb(255, 222, 65);
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-galka {
+    width: 960px;
+}
+
+.slider-content-text {
+    line-height: 170%;
+    width: 524px;
+}
+
+.slider-content {
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.slider-text-name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.slider-job {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.img-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.slider-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-img-circle {
+    width: 65px;
+    height: 65px;
+}

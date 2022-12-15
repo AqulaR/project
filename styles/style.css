@@ -71,7 +71,9 @@ h2 {
     margin: 30px 0 37px 0;
 }
 
+
 /* Header */
+
 
 .header {
     position: relative;
@@ -139,6 +141,7 @@ h2 {
 
 
 /* Anchors */
+
 
 .right-anchors-container {
     position: fixed;
@@ -224,7 +227,9 @@ h2 {
     display: block;
 }
 
+
 /* Main content */
+
 
 .mrgnblk {
     margin-bottom: 50px;
@@ -480,13 +485,13 @@ h2 {
 .pos {
     position: relative;
     top: -127px;
+    height: 2050px;
 } 
 
 .tariffs {
     background-color: white;
     padding-top: 10px;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 30px 40px -20px rgba(0, 0, 0, .3);
     outline: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -585,16 +590,29 @@ h2 {
     top: 2200px;
 }
 
+
 /* express audit */
 
+
+.express-audit {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 1px 1px 1px;
+    margin-top: 50px;
+    border-radius: 10px 10px;
+}
 
 .express-audit-container {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-width: 1px 1px 0 1px;
-    padding: 30px 0 20px 0;
+    padding: 50px 0 50px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.audit-img {
+    width: 131px; 
+    height: 423px; 
+    padding-left: 60px;
 }
 
 .express-audit-text-container {
@@ -643,6 +661,76 @@ h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.75);
     padding-top: 35px;
+}
+
+
+/* reviews */
+
+
+.reviews {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 10px;
+}
+
+
+.reviews-container {
+    width: 90%;
+    margin: auto;
+}
+
+.itc-slider__item {
+    width: 800px;
+    background-color: rgb(255, 222, 65);
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-content-text {
+    line-height: 170%;
+    width: 524px;
+}
+
+.slider-content {
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+.slider-text-name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.slider-job {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.img-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.slider-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-img-circle {
+    width: 65px;
+    height: 65px;
 }
 
 
@@ -700,6 +788,10 @@ h2 {
     margin-top: 7px;
 }
 
+.about-mrgn {
+    margin-bottom: 30px;
+}
+
 
 /* footer */
 
@@ -708,26 +800,50 @@ h2 {
     width: 960px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-width: 1px 0 0 0;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .first-column {
-    width: 60%;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .second-column {
-    width: 40%;
+    margin-top: 20px;
+    width: 300px;
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
 }
 
 .foter-big-header {
-    font-size: 32px;
-    margin: 20px 0 20px 60px;
+    font-size: 40px;
     font-weight: bold;
+}
+
+.footer-email {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.footer-adress {
+}
+
+.footer-telephone {
+}
+
+.input-footer {
+    outline: 1px solid #ffde41;
+    border: 1px solid black;
+    border-width: 0 0 1px 0;    
+    margin-top: 10px;   
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #ffde41;
 }
 
 
