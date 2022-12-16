@@ -1347,6 +1347,17 @@ th {
         height: 50px;
     }
 
+    /* about our company */
+
+    .about-our-company-text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .pos {
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 338px) and (max-width: 467px) {
@@ -1495,6 +1506,17 @@ th {
         flex-direction: column;
         margin-top: 4%;
     }
+
+    /* about our company */
+
+    .about-our-company-text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .pos {
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 468px) and (max-width: 665px) {
@@ -1593,6 +1615,16 @@ th {
         display: flex;
         flex-direction: column;
         margin-top: 4%;
+    }
+
+    /* about our company */
+
+    .about-our-company-text {
+        font-size: 16px;
+    }
+
+    .pos {
+        height: auto;
     }
 
 }

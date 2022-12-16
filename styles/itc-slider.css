@@ -109,3 +109,65 @@
 .itc-slider__indicator_active {
   background-color: rgb(255 255 255 / 90%);
 }
+
+
+@media screen and (min-width: 250px) and (max-width: 337px) {
+
+  /* reviews */
+
+  .itc-slider__btn {
+    display: none;
+  }
+
+  .reviews {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 10px;
+  }
+
+  .slider-content-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 338px) and (max-width: 467px) {
+
+  .itc-slider__btn {
+    display: none;
+  }
+
+  .reviews {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 10px;
+  }
+
+  .slider-content-text {
+    font-size: 16px;
+  }
+
+}
+
+
+@media screen and (min-width: 468px) and (max-width: 665px) {
+
+  .itc-slider__btn {
+    display: none;
+  }
+
+  .reviews {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 10px;
+  }
+
+}
