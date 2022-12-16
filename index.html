@@ -10,7 +10,7 @@
         <title>Главная страница</title>
     </head>
     <body class="body">
-        <div class="header v" id="main-anchor">
+        <div class="header" id="main-anchor">
             <a href="./index.html" style="text-decoration: none;">
                 <div class="logo-container">
                     <div class="1c-logo">
@@ -46,34 +46,34 @@
         </div>
         <div class="right-anchors-container">
             <ul>
-                <li class="active-anchor">
+                <li class="li-m">
                     <div class="block-anchor">
-                        <a class="hover" href="#main-anchor"></a> 
+                        <a class="hover active" href="#main-anchor"></a> 
                         <span class="hidden">Главная</span>
                     </div>
                 </li>
-                <li>
+                <li class="li-m">
                     <div class="block-anchor">
-                        <a class="hover" href="#"></a> 
+                        <a class="hover unactive" href="#pluses"></a> 
                         <span class="hidden">Плюсы</span>
                     </div>
                 </li>
-                <li>
+                <li class="li-m">
                     <div class="block-anchor">
-                        <a class="hover" href="#tarif-anchor"></a> 
+                        <a class="hover unactive" href="#tarif-anchor"></a> 
                         <span class="hidden">Тарифы</span>
                     </div>
                 </li>
-                <li>
+                <li class="li-m">
                     <div class="block-anchor">
-                        <a class="hover" href="#audit-anchor"></a> 
+                        <a class="hover unactive" href="#audit-anchor"></a> 
                         <span class="hidden">Аудит</span>
                     </div>
                 </li>
-                <li>
+                <li class="li-m">
                     <div class="block-anchor">
-                        <a class="hover" href="#about-us-anchor"></a> 
-                        <span class="hidden">О нас</span>
+                        <a class="hover unactive" href="#reviews-anchor"></a> 
+                        <span class="hidden">Отзывы</span>
                     </div>
                 </li>
             </ul>
@@ -93,70 +93,68 @@
                     <div class="">Хочу бугалтера</div>
                 </button>
             </div>
-            <div class="main-content-wrapper">
-                <div class="borderh">
-                    <div class="warranty mrgnblk">
-                        <h2 class="h2">Гарантируем</h2>
-                        <div class="block-container">
-                            <div class="block">
-                                <img src="./img/quality.png" alt="" class="warranty-img">
-                                <div>Качество работы</div>
-                            </div>
-                            <div class="block">
-                                <img src="./img/responsibility.png" alt="" class="warranty-img2">
-                                <div>Ответственность за <br> результат</div>
-                            </div>
-                            <div class="block">
-                                <img src="./img/defense.png" alt="" class="warranty-img">
-                                <div>Безопасность</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="howitwork">
-                        <h2 class="h2">Как это работает</h2>
-                        <img src="./img/howitwork.png" alt="" class="howitwork-img">
-                    </div>
-                </div>
-                <div class="bloknot v" id="tarif-anchor"></div>
-                <div class="benefits">
-                    <div class="benefits-border">
-                        <h2 class="h2">Преимущества</h2>
-                        <div class="benefits-container">
-                            <div class="benefits-column-first">
-                                <div class="risk-reduction">
-                                    <div class="benefits-img"><img src="./img/decline.png" class="risk-img"></div>
-                                    <div class="benefits-text"><p class="benefits-text-p">Снижение рисков и затрат</p></div>
-                                </div>
-                                <div class="mobile-app">
-                                    <div class="benefits-img"><img src="./img/mobile.png" class="mobile-img"></div>
-                                    <div class="benefits-text"><p class="benefits-text-p">Мобильное приложение</p></div>
-                                </div>
-                                <div class="time-saving">
-                                    <div class="benefits-img"><img src="./img/time.png" class="time-img"></div>
-                                    <div class="benefits-text"><p class="benefits-text-p">Экономия времени</p></div>
-                                </div>
-                            </div>
-                            <div class="benefits-column-second">
-                                <div class="support">
-                                    <div class="benefits-img"><img src="./img/24h.png" class="h-img"></div>
-                                    <div class="benefits-text"><p class="benefits-text-p">Постоянная поддержка</p></div>
-                                </div>
-                                <div class="quality">
-                                    <div class="benefits-img"><img src="./img/quality2.png" class="quality-img"></div>
-                                    <div class="benefits-text"><p class="benefits-text-p">Повышение качества и своемременности расчета</p></div>
-                                </div>
-                                <div class="promotion">
-                                    <div class="benefits-img"><img src="./img/shield.png" class="shield-img"></div>
-                                    <div class="benefits-text"><p class="benefits-text-p">Повышение уровня конфиденциальности</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="main-yellow-bg">
                 <div class="main-content-wrapper pos">
-                    <div class="tariffs">
+                    <div class="borderh" id="pluses">
+                        <div class="warranty mrgnblk">
+                            <h2 class="h2 v">Гарантируем</h2>
+                            <div class="block-container">
+                                <div class="block">
+                                    <img src="./img/quality.png" alt="" class="warranty-img">
+                                    <div>Качество работы</div>
+                                </div>
+                                <div class="block">
+                                    <img src="./img/responsibility.png" alt="" class="warranty-img2">
+                                    <div>Ответственность за <br> результат</div>
+                                </div>
+                                <div class="block">
+                                    <img src="./img/defense.png" alt="" class="warranty-img">
+                                    <div>Безопасность</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="howitwork v">
+                            <h2 class="h2">Как это работает</h2>
+                            <img src="./img/howitwork.png" alt="" class="howitwork-img">
+                        </div>
+                    </div>
+                    <div class="bloknot"></div>
+                    <div class="benefits">
+                        <div class="benefits-border">
+                            <h2 class="h2">Преимущества</h2>
+                            <div class="benefits-container">
+                                <div class="benefits-column-first">
+                                    <div class="risk-reduction">
+                                        <div class="benefits-img"><img src="./img/decline.png" class="risk-img"></div>
+                                        <div class="benefits-text"><p class="benefits-text-p">Снижение рисков и затрат</p></div>
+                                    </div>
+                                    <div class="mobile-app">
+                                        <div class="benefits-img"><img src="./img/mobile.png" class="mobile-img"></div>
+                                        <div class="benefits-text"><p class="benefits-text-p">Мобильное приложение</p></div>
+                                    </div>
+                                    <div class="time-saving">
+                                        <div class="benefits-img"><img src="./img/time.png" class="time-img"></div>
+                                        <div class="benefits-text"><p class="benefits-text-p">Экономия времени</p></div>
+                                    </div>
+                                </div>
+                                <div class="benefits-column-second">
+                                    <div class="support">
+                                        <div class="benefits-img"><img src="./img/24h.png" class="h-img"></div>
+                                        <div class="benefits-text"><p class="benefits-text-p">Постоянная поддержка</p></div>
+                                    </div>
+                                    <div class="quality">
+                                        <div class="benefits-img"><img src="./img/quality2.png" class="quality-img"></div>
+                                        <div class="benefits-text"><p class="benefits-text-p">Повышение качества и своемременности расчета</p></div>
+                                    </div>
+                                    <div class="promotion">
+                                        <div class="benefits-img"><img src="./img/shield.png" class="shield-img"></div>
+                                        <div class="benefits-text"><p class="benefits-text-p">Повышение уровня конфиденциальности</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs" id="tarif-anchor">
                         <h2 class="pdng">Наши Тарифы</h2>
                         <div class="yellow-arrow"></div>
                         <div class="tariffs-container">
@@ -756,7 +754,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="reviews">
+                    <div class="reviews v" id="reviews-anchor">
                         <h2 class="h2">Отзывы</h2>
                         <div class="reviews-container">
                             <div class="itc-slider" data-slider="itc-slider" data-autoplay="true">
@@ -832,18 +830,18 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <div class="first-column">
-                        <div class="foter-big-header">Связаться <br>с нами</div>
-                        <div class="footer-email">example@gmail.com</div>
-                        <div class="footer-adress">Адрес: г. Вологда, ул Костромская, 7</div>
-                        <div class="footer-telephone">Телефон: 8 921 716-88-99</div>
-                    </div>
-                    <div class="second-column">
-                        <input name="telephone" type="text" placeholder="Имя*" class="input-footer">
-                        <input name="telephone" type="text" placeholder="e-mail*" class="input-footer">
-                        <input name="telephone" type="text" placeholder="Телефон*" class="input-footer">
-                        <button>Отправить</button>
-                    </div>
+                        <div class="first-column">
+                            <div class="foter-big-header">Связаться <br>с нами</div>
+                            <div class="footer-email">example@gmail.com</div>
+                            <div class="footer-adress">Адрес: г. Вологда, ул Костромская, 7</div>
+                            <div class="footer-telephone">Телефон: 8 921 716-88-99</div>
+                        </div>
+                        <div class="second-column">
+                            <input name="telephone" type="text" placeholder="Имя*" class="input-footer">
+                            <input name="telephone" type="text" placeholder="e-mail*" class="input-footer">
+                            <input name="telephone" type="text" placeholder="Телефон*" class="input-footer">
+                            <button>Отправить</button>
+                        </div>
                 </div>
             </div>
         </div>
@@ -922,19 +920,22 @@
             })
             }
 
-            const doc = window.document;
-            const links = doc.querySelectorAll("a.hover"); // любой нужный селектор
-            console.log(links);
-            const linksCount = links.length;
-            const currentURL = doc.querySelectorAll("div.v");
-            console.log(currentURL);
+            window.addEventListener('scroll', () => {
+                let scrollDistance = window.scrollY;
 
-            for (let i = 0; i < linksCount; i++) {
-                let linkURL = links[i].href;
-                if (currentURL[i].id == linkURL) {
-                    links[i].classList.add("active");
+                document.querySelectorAll('.v').forEach((el, i) => {    
+                    if (el.offsetTop - document.querySelector('a.hover').clientHeight <= scrollDistance) {
+                        document.querySelectorAll('a.hover').forEach((el) => {
+                            if (el.classList.contains('active')) {
+                                el.classList.remove('active');
+                                el.classList.add('unactive');
+                            }
+                        });
+                        document.querySelectorAll('.block-anchor')[i].querySelector('a.hover').classList.remove('unactive');
+                        document.querySelectorAll('.block-anchor')[i].querySelector('a.hover').classList.add('active');
                     }
-            }
+                });
+            });
 
         </script>
     </body>
