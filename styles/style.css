@@ -1362,6 +1362,38 @@ th {
         height: 50px;
     }
 
+    .bloknot {
+        display: none;
+    }
+
+    /* tarrifs */
+
+    .tariffs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tariffs-blocks-text {
+        display: none;
+    }
+
+    .tariffs-blocks {
+        width: 235px;
+        height: 220px;
+
+        margin-top: 4%;
+        align-items: center;
+    }
+
+    .tariffs-blocks-price {
+        margin-top: 7%;
+    }
+
+    .tariffs-blocks-button {
+        margin: 0;
+        margin-top: 10%;
+    }
+
     /* about our company */
 
     .about-our-company-text {
@@ -1370,7 +1402,7 @@ th {
     }
 
     .pos {
-        height: 3000px;
+        height: 3200px;
     }
 
     /* footer */
@@ -1545,6 +1577,38 @@ th {
         margin-top: 4%;
     }
 
+        /* tarrifs */
+
+    .bloknot {
+        display: none;
+    }
+
+    .tariffs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tariffs-blocks-text {
+        display: none;
+    }
+
+    .tariffs-blocks {
+        width: 235px;
+        height: 220px;
+
+        margin-top: 4%;
+        align-items: center;
+    }
+
+    .tariffs-blocks-price {
+        margin-top: 7%;
+    }
+
+    .tariffs-blocks-button {
+        margin: 0;
+        margin-top: 10%;
+    }
+
     /* about our company */
 
     .about-our-company-text {
@@ -1553,7 +1617,7 @@ th {
     }
 
     .pos {
-        height: 3500px;
+        height: 3725px;
     }
 
     /* footer */
@@ -1685,7 +1749,7 @@ th {
     }
 
     .pos {
-        height: 3000px;
+        height: 3400px;
     }
 
     /* footer */
@@ -1709,6 +1773,40 @@ th {
     .second-column {
         width: 350px;
         margin-left: 35px;
+    }
+
+    /* tarrifs */
+
+    .bloknot {
+        display: none;
+    }
+
+    .tariffs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tariffs-blocks-text {
+        display: none;
+    }
+
+    .tariffs-blocks {
+        width: 285px;
+        height: 275px;
+
+        margin-top: 4%;
+        align-items: center;
+    }
+
+    .tariffs-blocks-price {
+        margin-top: 10%;
+    }
+
+    .tariffs-blocks-button {
+        margin: 0;
+        margin-top: 15%;
+        width: 150px;
+        height: 45px;
     }
 
 }
