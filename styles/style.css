@@ -854,6 +854,17 @@ h2 {
     background-color: #ffde41;
 }
 
+.footer-btn {
+    width: 131px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-top: 2%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 
 /* orderservice */
 
@@ -1362,6 +1373,29 @@ th {
         height: 3000px;
     }
 
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .first-column {
+        margin-left: 15px;
+    }
+
+    .footer-adress {
+        font-size: 12px;
+    }
+
+    .footer-telephone {
+        font-size: 12px;
+    }
+
+    .second-column {
+        width: 230px;
+        margin-left: 15px;
+    }
+
 }
 
 @media screen and (min-width: 338px) and (max-width: 467px) {
@@ -1521,6 +1555,29 @@ th {
     .pos {
         height: 3500px;
     }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .first-column {
+        margin-left: 20px;
+    }
+
+    .footer-adress {
+        font-size: 16px;
+    }
+
+    .footer-telephone {
+        font-size: 16px;
+    }
+
+    .second-column {
+        width: 300px;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (min-width: 468px) and (max-width: 665px) {
@@ -1629,6 +1686,29 @@ th {
 
     .pos {
         height: 3000px;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .first-column {
+        margin-left: 35px;
+    }
+
+    .footer-adress {
+        font-size: 16px;
+    }
+
+    .footer-telephone {
+        font-size: 16px;
+    }
+
+    .second-column {
+        width: 350px;
+        margin-left: 35px;
     }
 
 }
