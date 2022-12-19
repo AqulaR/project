@@ -89,9 +89,55 @@
                 <h2 class="h2">УЧЁТ БИЗНЕСА НАМ</h2>
                 <p class="header20">Сосредоточьтесь на управлении бизнеса.<br>
                     Учёт и отчётность мы возьмём на себя.</p>
-                <button class="btn">
+                <button class="btn" id="0" onclick="orderopn(this)">
                     <div class="">Хочу бугалтера</div>
                 </button>
+                <!-- The Modal -->
+                <div id="myOrderModal" class="modal">
+                <!-- Модальное содержание -->
+                    <div class="order-content">
+                        <div class="orderservice-container">
+                            <div class="order-header">
+                                <button class="close" onclick="ordercls(this)" id="0">&times;</button>
+                                <h2 class="order-name">Заказать услугу</h2>
+                            </div>
+                            <div class="entry-field">
+                                <input name="name" placeholder="Ваше имя" class="field">
+                                <input name="telephone" type="text" placeholder="Ваш телефон*" class="field">
+                                <input name="telephone" type="text" placeholder="Ваш E-mail" class="field">
+                                <div class="form-sobs">
+                                    <p class="type-of-ownership">Укажите вашу форму собственности</p>
+                                    <p style="padding-top: 5%;">
+                                        <input type="radio" name="form" id="answer1" value="IP" style="vertical-align:middle;margin:-2px 0 0 0;">
+                                        <label for="answer1">ИП</label>
+                                    </p>
+                                    <p style="padding-top: 5%;">
+                                        <input type="radio" name="form" id="answer2" value="OOO" style="vertical-align:middle;margin:-2px 0 0 0;">
+                                        <label for="answer2">ООО</label>
+                                    </p>
+                                </div>
+                                <div class="form-employe">
+                                    <p class="number-of-employees">Сколько у вас сотрудников?</p>
+                                    <p style="padding-top: 5%;">
+                                        <input type="radio" name="number" id="1" value="no" style="vertical-align:middle;margin:-2px 0 0 0;">
+                                        <label for="answer1">Нет</label>
+                                    </p>
+                                    <p style="padding-top: 5%;">
+                                        <input type="radio" name="number" id="2" value="do" style="vertical-align:middle;margin:-2px 0 0 0;">
+                                        <label for="answer2">До 10</label>
+                                    </p>
+                                    <p style="padding-top: 5%;">
+                                        <input type="radio" name="number" id="3" value="bolee" style="vertical-align:middle;margin:-2px 0 0 0;">
+                                        <label for="answer2">Более 10</label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="submit-an-application">
+                                <button class="submit-button"><p>Отправить заявку</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main-yellow-bg">
                 <div class="main-content-wrapper pos">
@@ -745,8 +791,10 @@
                                     Проверьте учет в вашей компании  на ошибки. В течении дня вы получите отчет с рекомендациями по улучшению ведения учета. 
                                 </div>
                                 <div class="express-audit-button">
-                                    <img src="img/Resurs_4_4x.png" style="width: 117px; height: 39px; transform: rotate(28deg); padding-left: 35%; padding-bottom: 4%;">
-                                    <button class="audit-order-button"><p class="button-name">Заказать</p></button>
+                                    <button class="audit-order-button" onclick="orderopn(this)">
+                                        <p class="button-name">Заказать</p>
+                                        <img src="img/Resurs_4_4x.png" style="position: relative; height: 39px; transform: rotate(28deg); padding-left: 35%; top: -80px; left: 60px;">
+                                    </button>
                                 </div>
                                 <div class="express-audit-description">
                                     Экспресс-аудит* представляет собой  выборочную проверку<br> состояния налогового и бухгалтерского учёта. Проводится<br> удалённо и позволяет выявить ошибки в отчётности 
@@ -853,6 +901,18 @@
             let ipbtn = document.getElementsByClassName("ip");
             let ooobtn = document.getElementsByClassName("ooo");
 
+            let orderModal = document.querySelectorAll('[id = "myOrderModal"]');
+
+            function orderopn(elem) {
+                orderModal[0].style.display = 'block';
+                body.style.overflow = "hidden";
+            }
+
+            function ordercls(elem) {
+                orderModal[0].style.display = 'none';
+                body.style.overflow = "visible";
+            }
+
             for (let i = 0; i < modal.length; i++) {
                 ooob[i].style.display = 'none';
             }
@@ -899,9 +959,13 @@
             document.addEventListener("click", function(evt) {
                 for (let i = 0; i < modal.length; i++) {
                     if (evt.target == modal[i]){
-                        modal[i].style.display = 'none'; 
+                        modal[i].style.display = 'none';
                         body.style.overflow = "visible";
                     }
+                }
+                if (evt.target == orderModal[0]){
+                    orderModal[0].style.display = 'none';
+                    body.style.overflow = "visible";
                 }
             });
 
@@ -910,9 +974,7 @@
             for (let anchor of anchors) {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault()
-                
                 const blockID = anchor.getAttribute('href')
-                
                 document.querySelector(blockID).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -936,7 +998,6 @@
                     }
                 });
             });
-
         </script>
     </body>
 </html>

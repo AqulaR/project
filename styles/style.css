@@ -83,7 +83,7 @@ h2 {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 222, 65);
-    z-index: 999;
+    z-index: 99;
 }
 
 .logo-container {
@@ -655,12 +655,14 @@ h2 {
     font-weight: bold;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
 }
 
 .express-audit-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;
 }
 
 .express-audit-description {
@@ -838,12 +840,6 @@ h2 {
     margin-top: 20px;
 }
 
-.footer-adress {
-}
-
-.footer-telephone {
-}
-
 .input-footer {
     outline: 1px solid #ffde41;
     border: 1px solid black;
@@ -876,27 +872,33 @@ h2 {
     margin-bottom: 30px;
 }
 
-.orderservice-container {
-    font-family: 'PT Sans', sans-serif;
-    width: 500px;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, .5);
+.form-sobs {
+    width: 400px;
 }
 
-.header-text {
+.form-employe {
+    width: 400px;
+}
+
+.orderservice-container {
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.order-header {
     text-align: center;
     color: black;
-    padding-top: 4%;
+    padding-top: 3%;
+    padding-right: 20px;
 }
 
 .entry-field {
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
-    padding-left: 8%;
-    align-items: flex-start;
-
+    align-items: center;
+    text-align: start;
 }
 
 .field {
@@ -931,10 +933,6 @@ input[type='radio'] {
     position: relative;
     height: 15px;
     width: 15px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
 }
 
 input[type='radio']::before {
@@ -982,8 +980,27 @@ input[type='radio']:checked::after {
 }
 
 
-/* Модальное окно */
+/* Модальные окна */
 
+.order-body {
+    padding: 0;
+}
+
+.order-content {
+    border-radius: 10px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 500px;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    padding-bottom: 110px;
+    text-align: left;
+}
 
 .modal {
     display: none;
@@ -993,15 +1010,10 @@ input[type='radio']:checked::after {
     left: 0;
     top: 0;
     width: 100%;
-    /* Полная ширина */
     height: 100%;
-    /* Полная высота */
     overflow: auto;
-    /* Включите прокрутку, если это необходимо */
     background-color: rgb(0, 0, 0);
-    /* Цвет запасной вариант  */
     background-color: rgba(0, 0, 0, 0.4);
-    /*Черный с непрозрачностью */
 }
 
 /* Модальное содержание */
