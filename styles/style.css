@@ -4,6 +4,11 @@
     scrollbar-width: none;
 }
 
+th,
+td {
+    border-style: solid;
+}
+
 .body {
     overflow: visible;
 }
@@ -493,8 +498,8 @@ h2 {
 .pos {
     position: relative;
     top: -1463px;
-    height: 2050px;
-} 
+    height: 2605px;
+}
 
 .tariffs {
     background-color: white;
@@ -618,8 +623,8 @@ h2 {
 }
 
 .audit-img {
-    width: 131px; 
-    height: 423px; 
+    width: 131px;
+    height: 423px;
     padding-left: 60px;
 }
 
@@ -843,8 +848,8 @@ h2 {
 .input-footer {
     outline: 1px solid #ffde41;
     border: 1px solid black;
-    border-width: 0 0 1px 0;    
-    margin-top: 10px;   
+    border-width: 0 0 1px 0;
+    margin-top: 10px;
     box-sizing: border-box;
     padding: 5px;
     background-color: #ffde41;
@@ -859,6 +864,43 @@ h2 {
     margin-top: 2%;
     cursor: pointer;
     font-weight: bold;
+}
+
+
+/* profit */
+
+
+.profit {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 1px 1px 1px;
+    margin-top: 50px;
+    border-radius: 10px 10px;
+}
+
+
+.tables-profit {
+    width: 90%;
+    margin: auto;
+}
+
+.profit-table {
+}
+
+.table-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.table-profit-text {
+    margin-bottom: 10px;
+}
+
+.table-text-bold {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 35px;
 }
 
 
@@ -1148,7 +1190,8 @@ caption {
 
 table {
     width: 100%;
-    border-color: rgba(0, 0, 0, .7);
+    border: rgba(0, 0, 0, 0);
+    outline: 1px solid #000;
     table-layout: fixed;
     margin-bottom: 25px;
 }
@@ -1177,7 +1220,39 @@ th {
 /*  Медиатеги   */
 
 
-@media screen and (min-width: 250px) and (max-width: 337px) {
+@media screen and (min-width: 270px) and (max-width: 337px) {
+
+    /* tables */
+
+    td {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 12px;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    .right-anchors-container {
+        display: none;
+    }
+
+    .howitwork-img {
+        width: 100%;
+    }
+
+    .pdng {
+        padding-top: 10px;
+    }
+
+    .benefits {
+        margin-top: 5%;
+    }
+
+    .tariffs {
+        outline: none;
+    }
 
     h1 {
         font-size: 32px;
@@ -1280,20 +1355,20 @@ th {
         display: none;
     }
 
-    .express-audit-text-container{
+    .express-audit-text-container {
         padding-right: 0;
     }
-    
+
     .express-audit-text {
         font-size: 16px;
         text-align: center;
-        
+
     }
 
     .audit-order-button {
         width: 150px;
         height: 50px;
-    
+
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
@@ -1304,7 +1379,7 @@ th {
     .tst {
         width: 75px;
         height: 25px;
-        padding-left: 35%; 
+        padding-left: 35%;
         padding-bottom: 4%;
     }
 
@@ -1439,10 +1514,33 @@ th {
         width: 230px;
         margin-left: 15px;
     }
-
 }
 
-@media screen and (min-width: 338px) and (max-width: 467px) {
+@media screen and (min-width: 338px) and (max-width: 495px) {
+
+    /* tables */
+
+    td {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 12px;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    .right-anchors-container {
+        display: none;
+    }
+
+    .howitwork-img {
+        width: 100%;
+    }
+
+    .pdng {
+        padding-top: 10px;
+    }
 
     .block-container {
         flex-direction: column;
@@ -1521,19 +1619,19 @@ th {
         display: none;
     }
 
-    .express-audit-text-container{
+    .express-audit-text-container {
         padding-right: 0;
     }
-    
+
     .express-audit-text {
         font-size: 20px;
-        text-align: center; 
+        text-align: center;
     }
 
     .audit-order-button {
         width: 150px;
         height: 50px;
-    
+
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
@@ -1544,7 +1642,7 @@ th {
     .tst {
         width: 75px;
         height: 25px;
-        padding-left: 20%; 
+        padding-left: 20%;
         padding-bottom: 4%;
     }
 
@@ -1589,7 +1687,7 @@ th {
         margin-top: 4%;
     }
 
-        /* tarrifs */
+    /* tarrifs */
 
     .bloknot {
         display: none;
@@ -1656,7 +1754,31 @@ th {
     }
 }
 
-@media screen and (min-width: 468px) and (max-width: 665px) {
+@media screen and (min-width: 496px) and (max-width: 691px) {
+
+    /* tables */
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    th {
+        font-size: 16px;
+    }
+    
+    .right-anchors-container {
+        display: none;
+    }
+
+    .howitwork-img {
+        width: 100%;
+    }
+
+    .pdng {
+        padding-top: 10px;
+    }
 
     .block-container {
         flex-direction: column;
@@ -1687,19 +1809,19 @@ th {
         display: none;
     }
 
-    .express-audit-text-container{
+    .express-audit-text-container {
         padding-right: 0;
     }
-    
+
     .express-audit-text {
         font-size: 20px;
-        text-align: center; 
+        text-align: center;
     }
 
     .audit-order-button {
         width: 150px;
         height: 50px;
-    
+
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
@@ -1821,6 +1943,10 @@ th {
         height: 45px;
     }
 
+    .right-anchors-container {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 666px) {
@@ -1837,5 +1963,11 @@ th {
 @media screen and (max-width: 980px) {
     .main-content-wrapper {
         width: 98%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .right-anchors-container {
+        display: none;
     }
 }
