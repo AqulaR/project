@@ -201,7 +201,7 @@
                         </div>
                     </div>
                     <div class="tariffs" id="tarif-anchor">
-                        <h2 class="pdng nono">Наши Тарифы</h2>
+                        <h2 class="pdng nono">Наши тарифы</h2>
                         <div class="yellow-arrow"></div>
                         <div class="tariffs-container">
                             <div class="tariffs-blocks">
@@ -802,7 +802,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profit v">
+                    <div class="profit v" style="background-color: white;">
                         <div class="profit-container">
                             <div class="tables-profit">
                                 <h2 class="table-header h2">Почему именно мы должны вести ваш бухгалтерский учет:</h2>
@@ -839,8 +839,8 @@
                                             <td>2800</td>
                                         </tr>
                                         <tr>
-                                            <td><p style="color: red; font-weight:bold; font-size: 20px;">ИТОГ</p></td>
-                                            <td><p style="font-weight:bold; font-size: 20px; color: red;">33100</p></td>
+                                            <td style="background-color: #ffde41;"><p style="color: red; font-weight:bold; font-size: 20px;">ИТОГ</p></td>
+                                            <td style="background-color: #ffde41;"><p style="font-weight:bold; font-size: 20px; color: red;">33100</p></td>
                                         </tr>
                                 </table>
                                 <p class="table-text-bold">Выгода очевидна...</p>
@@ -860,9 +860,11 @@
                                             <div class="slider-text-name">ООО "Джулия тур"</div>
                                             <div class="slider-job">Турагененство</div>
                                             <div class="img-position">
-                                                <div class="slider-img">
-                                                    <img src="./img/primer1.png" class="slider-img-circle">
-                                                </div>
+                                                <button class="doc-btn" onclick="opndoc(this)" id="0">
+                                                    <div class="slider-img">
+                                                        <img src="./img/document.png" class="slider-img-circle">
+                                                    </div>
+                                                </button>
                                             </div>
                                         </div>
                                         <div class="itc-slider__item">
@@ -872,9 +874,11 @@
                                             <div class="slider-text-name">ООО "ПИТ СТОП"</div>
                                             <div class="slider-job">Шины и диски</div>
                                             <div class="img-position">
-                                                <div class="slider-img">
-                                                    <img src="./img/primer1.png" class="slider-img-circle">
-                                                </div>
+                                                <button class="doc-btn" onclick="opndoc(this)" id="1">
+                                                    <div class="slider-img">
+                                                        <img src="./img/document.png" class="slider-img-circle">
+                                                    </div>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -883,37 +887,71 @@
                                 <button class="itc-slider__btn itc-slider__btn_prev"></button>
                                 <button class="itc-slider__btn itc-slider__btn_next"></button>
                             </div>
+                            <!-- The Modal -->
+                            <div id="myDocModal" class="modal">
+                            <!-- Модальное содержание -->
+                                <div class="doc-content">
+                                    <div class="doc-container">
+                                        <div class="doc-img-container">
+                                            <img src="./img/reviews/review1.jpg" alt="Здесь должен присутствовать отзыв" width="100%" height="auto" class="doc-image" style="display: none;" id="0">
+                                            <img src="./img/reviews/review2.jpg" alt="Здесь должен присутствовать отзыв" width="100%" height="auto" class="doc-image" style="display: none;" id="1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="about-our-company mrgnblk v" id="about-us-anchor">
                         <div class="about-our-company-container">
                             <h2 class="about-mrgn">О нашей компании</h2>
                             <div class="about-our-company-text">
-                                Компания «АлгорИТм» - партнер фирмы «1C», оказывающий бухгалтерские услуги малому бизнесу под маркой «1C:БухОбслуживание» по единому стандарту и технологии оказания бухгалтерских услуг, разработанному в фирме 1C. Это позволяет контролировать качество оказываемых услуг учета (минимизировать количество ошибок, допускаемых в расчетах, в кадровом учете, при составлен регламентированной отчетности), повышая при этом эффективность работы специалистов. Реализована процедура централизованного аудита качества учета от Фирмы 1C. <br><br> Для наших клиентов мы делаем бухгалтерский мир близким, дружелюбным и простым для понимания. Теперь Вы можете заниматься своим бизнесом, а не бухучетом. И в то же время имеете возможность контролировать свою бухгалтерию с любого компьютера с доступом в Интернет.
+                                Компания «АлгорИТм» - партнер фирмы «1C», оказывающий бухгалтерские услуги малому бизнесу под маркой «1C:БухОбслуживание» по единому стандарту и технологии оказания бухгалтерских услуг, разработанному в фирме 1C. Это позволяет контролировать качество оказываемых услуг учета (минимизировать количество ошибок, допускаемых в расчетах, в кадровом учете, при составлен регламентированной отчетности), повышая при этом эффективность работы специалистов. Реализована процедура централизованного аудита качества учета от Фирмы 1C. <br><br> Для наших клиентов мы делаем бухгалтерский мир близким, дружелюбным и простым для понимания. Теперь Вы можете заниматься своим бизнесом, а не бухучетом. И в то же время имеете возможность контролировать свою бухгалтерию с любого компьютера с доступом в Интернет.<br><br>
+                            </div>
+                            <div class="twoside-container">
+                                <div class="about-our-company-left">
+                                    <p class="bold" style="font-size: 20px; padding-left: 10px;">А еще мы занимаемся:</p><br>
+                                    <ul style="padding-left: 15px;">
+                                        <li>Продажа программ 1С</li>
+                                        <li>Настройка и внедрение 1С</li>
+                                        <li>Обновление и поддержка 1С</li>
+                                        <li>Автоматизируем торговлю и склад</li>
+                                        <li>Настраиваем и восстанавливаем учет</li>
+                                    </ul>
+                                </div>
+                                <div class="about-our-company-right" >
+                                    <p class="bold" style="font-size: 20px; padding-left: 10px;">Продаем и ремонтируем:</p><br>
+                                    <ul style="padding-left: 15px;">
+                                        <li>Кассовые аппараты и сервисы</li>
+                                        <li>Сканеры и принтеры штрихкода</li>
+                                        <li>Терминалы сбора данных для учета</li>
+                                        <li>Помогаем с учетом маркированных товаров</li>
+                                        <li>Заключаем договоры на обслуживание</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer">
                     <div class="first-column">
-                        <div class="logo-container" style="margin-left: 0px;">
+                        <!--<div class="logo-container" style="margin-left: 0px;">
                             <div class="1c-logo">
                                 <img src="./img/logo/red_on_white_sized_3.png" alt="Логитип 1с" class="img-1c">
                             </div>
                             <div class="algotitm-logo">
                                 <img src="./img/algoritmlogored.png" alt="Логитип АлгорИТм" class="img-algoritm">
                             </div>
-                        </div>
+                        </div>-->
+                        <div class="">ООО "АлгорИТм"</div>
                         <div class="footer-email">opt@algoritm35.ru</div>
                         <div class="footer-adress">Адрес: г. Вологда, ул Костромская, 7</div>
                         <div class="footer-telephone">Телефон: 8 921 716-88-99</div>
                     </div>
                     <div class="second-column">
-                        <div class="second-column-header">Напишите нам</div>
-                        <input name="telephone" type="text" placeholder="Имя*" class="input-footer">
-                        <input name="telephone" type="text" placeholder="e-mail*" class="input-footer">
-                        <input name="telephone" type="text" placeholder="Телефон*" class="input-footer">
-                        <button class="footer-btn">Отправить</button>
+                        <div class="second-column-header">Другие проекты:</div>
+                        <a href="http://edu.posplanet.ru" class="footer-a">Видеокурсы 1С</a>
+                        <a href="http://posplanet.ru/catalog" class="footer-a">Интернет-магазин</a>
+                        <a href="http://standpos.ru" class="footer-a">Кронштейны для терминалов</a>
                     </div>
                 </div>
             </div>
@@ -928,6 +966,9 @@
 
             let orderModal = document.querySelectorAll('[id = "myOrderModal"]');
 
+            let docModal = document.querySelectorAll('[id = "myDocModal"]');
+            let docimgs = document.getElementsByClassName("doc-image")
+
             function orderopn(elem) {
                 orderModal[0].style.display = 'block';
                 body.style.overflow = "hidden";
@@ -936,6 +977,24 @@
             function ordercls(elem) {
                 orderModal[0].style.display = 'none';
                 body.style.overflow = "visible";
+            }
+
+            function opndoc(elem){
+                docModal[0].style.display = 'block';
+                body.style.overflow = "hidden";
+                for (let i = 0; i < docimgs.length; i++) {
+                    if (elem.id == docimgs[i].id){
+                        docimgs[i].style.display = 'block'
+                    }
+                }
+            }
+
+            function clsdoc(elem){
+                docModal[0].style.display = 'none';
+                body.style.overflow = "visible";
+                for (let i = 0; i < docimgs.length; i++) {
+                    docimgs[i].style.display = 'none';
+                }
             }
 
             for (let i = 0; i < modal.length; i++) {
@@ -991,6 +1050,13 @@
                 if (evt.target == orderModal[0]){
                     orderModal[0].style.display = 'none';
                     body.style.overflow = "visible";
+                }
+                if (evt.target == docModal[0]){
+                    docModal[0].style.display = 'none';
+                    body.style.overflow = "visible";
+                    for (let i = 0; i < docimgs.length; i++) {
+                        docimgs[i].style.display = 'none';
+                    }
                 }
             });
 

@@ -498,7 +498,7 @@ h2 {
 .pos {
     position: relative;
     top: -1463px;
-    height: 2500px;
+    height: 2700px;
 }
 
 .tariffs {
@@ -691,7 +691,6 @@ h2 {
     border-radius: 10px;
 }
 
-
 .reviews-container {
     width: 90%;
     margin: auto;
@@ -733,6 +732,11 @@ h2 {
     margin-top: 12px;
 }
 
+.doc-btn {
+    background-color: #ffde41;
+    border: 0px;
+}
+
 .slider-img {
     width: 80px;
     height: 80px;
@@ -743,11 +747,42 @@ h2 {
     align-items: center;
 }
 
-.slider-img-circle {
-    width: 65px;
-    height: 65px;
+.slider-img:hover {
+    cursor: pointer;
 }
 
+.slider-img-circle {
+    width: 40px;
+    height: 40px;
+}
+
+.doc-content {
+    border-radius: 10px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 900px;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    margin-bottom: 110px;
+    text-align: left;
+}
+
+.doc-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.doc-header {
+    text-align: center;
+    color: black;
+    padding-right: 20px;
+}
 
 /* about our company */
 
@@ -807,7 +842,23 @@ h2 {
     margin-bottom: 30px;
 }
 
+.twoside-container {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+}
 
+.about-our-company-left {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+}
+
+.about-our-company-right {
+    width: 50%;
+    padding-left: 10px;
+}
 /* footer */
 
 
@@ -836,8 +887,9 @@ h2 {
 }
 
 .second-column-header {
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .footer-email {
@@ -882,6 +934,11 @@ h2 {
     font-weight: bold;
 }
 
+.footer-a {
+    text-decoration: underline;
+    color: #000;
+    margin-bottom: 7px;
+}
 
 /* profit */
 
