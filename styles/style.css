@@ -887,30 +887,30 @@ h2 {
 }
 
 .second-column-header {
-    font-size: 26px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+.footer-header {
+    font-size: 20px;
 }
 
 .footer-email {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration-line: underline;
-    margin-left: 6px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .footer-adress {
-    font-size: 20px;
+    font-size: 16px;
     width: 371px;
-    margin-top: 26px;
-    margin-left: 6px;
+    margin-top: 15px;
 }
 
 .footer-telephone {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 5px;
-    margin-left: 6px;
 }
 
 .input-footer {
