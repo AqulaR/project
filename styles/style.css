@@ -384,21 +384,15 @@ h2 {
 .benefits-container {
   display: flex;
   justify-content: space-around;
-  width: 90%;
-  margin: auto;
   padding-bottom: 100px;
 }
 
 .benefits-column-first {
-  width: 50%;
-  padding-right: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .benefits-column-second {
-  width: 50%;
-  padding-left: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -2316,13 +2310,7 @@ th {
   }
 }
 
-@media screen and (min-width: 690px) {
-  .benefits-text-p {
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   .benefits-text-p {
     width: 300px;
   }
