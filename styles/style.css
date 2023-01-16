@@ -262,8 +262,7 @@ h2 {
 }
 
 .bgimage {
-  background: url(../img/main-fon/content-intro-bg22.png) no-repeat center
-    center;
+  background: url(../img/main-fon/content-intro-bg22.png) no-repeat center center;
 }
 
 .btn {
@@ -590,6 +589,15 @@ h2 {
 }
 
 /* express audit */
+
+.freeimg {
+  position: relative;
+  height: 39px;
+  transform: rotate(28deg);
+  padding-left: 35%;
+  top: -80px;
+  left: 60px;
+}
 
 .express-audit {
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -934,7 +942,10 @@ h2 {
   margin: auto;
 }
 
-.profit-table {
+.kryg-galka {
+  position: relative; 
+  height: 130px; 
+  top: -22px;
 }
 
 .table-header {
@@ -1380,6 +1391,10 @@ th {
 @media screen and (min-width: 270px) and (max-width: 337px) {
   /* tables */
 
+  .bgimage {
+    height: 610px;
+  }
+
   td {
     padding-top: 0;
     padding-bottom: 0;
@@ -1412,7 +1427,7 @@ th {
 
   h1 {
     font-size: 32px;
-    margin-top: 10px;
+    margin-top: 60px;
   }
 
   h2 {
@@ -1500,12 +1515,13 @@ th {
   .header {
     height: 92px;
   }
-
+  
   .info-container-top-logo-container {
     margin-left: 0;
   }
 
   /* express audit */
+
 
   .express-audit-image {
     display: none;
@@ -1529,6 +1545,17 @@ th {
     box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     cursor: pointer;
+  }
+
+  .button-name {
+    margin-top: 10px;
+  }
+
+  .freeimg {
+    position: relative;
+    height: 32px;
+    top: -67px;
+    left: 52px;
   }
 
   .tst {
@@ -1800,17 +1827,6 @@ th {
     text-align: center;
   }
 
-  .audit-order-button {
-    width: 150px;
-    height: 50px;
-
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    cursor: pointer;
-  }
-
   .tst {
     width: 75px;
     height: 25px;
@@ -1829,6 +1845,28 @@ th {
   .express-audit-image-free {
     padding-bottom: 2%;
     padding-left: 35%;
+  }
+
+  .audit-order-button {
+    width: 170px;
+    height: 50px;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  .button-name {
+    margin-top: 10px;
+  }
+
+  .freeimg {
+    position: relative;
+    height: 32px;
+    top: -67px;
+    left: 52px;
   }
 
   /* benefits */
@@ -1935,10 +1973,10 @@ th {
     }*/
 
   h1 {
-    font-size: 60px;
+      font-size: 60px;
   }
 
-  /* tables */
+    /* tables */
 
   td {
     padding-top: 10px;
@@ -2000,17 +2038,6 @@ th {
     text-align: center;
   }
 
-  .audit-order-button {
-    width: 150px;
-    height: 50px;
-
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    cursor: pointer;
-  }
-
   .tst {
     width: 75px;
     height: 25px;
@@ -2027,6 +2054,28 @@ th {
 
   .express-audit-image-free {
     padding-bottom: 2%;
+  }
+
+  .audit-order-button {
+    width: 170px;
+    height: 50px;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  .button-name {
+    margin-top: 10px;
+  }
+
+  .freeimg {
+    position: relative;
+    height: 32px;
+    top: -67px;
+    left: 52px;
   }
 
   /* benefits */
