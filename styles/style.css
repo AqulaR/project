@@ -1499,12 +1499,13 @@ th {
   .header {
     height: 92px;
   }
-
+  
   .info-container-top-logo-container {
     margin-left: 0;
   }
 
   /* express audit */
+
 
   .express-audit-image {
     display: none;
@@ -1520,7 +1521,7 @@ th {
   }
 
   .audit-order-button {
-    width: 150px;
+    width: 170px;
     height: 50px;
 
     background: #ffffff;
@@ -1931,7 +1932,12 @@ th {
 @media screen and (min-width: 496px) and (max-width: 691px) {
   /*.pos {
         top: -2000px
+    }*/
+
+    h1 {
+        font-size: 60px;
     }
+
     /* tables */
 
   td {
