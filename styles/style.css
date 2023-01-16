@@ -410,7 +410,6 @@ h2 {
 .benefits-text-p {
   font-size: 24px;
   line-height: 140%;
-  width: 300px;
 }
 
 .benefits-img {
@@ -892,7 +891,6 @@ h2 {
 
 .footer-adress {
   font-size: 16px;
-  width: 371px;
   margin-top: 15px;
 }
 
@@ -928,6 +926,11 @@ h2 {
   margin-bottom: 7px;
 }
 
+.twoside-container-header {
+  font-size: 20px; 
+  padding-left: 10px;
+}
+
 /* profit */
 
 .profit {
@@ -942,9 +945,22 @@ h2 {
   margin: auto;
 }
 
+.table-result{
+  font-weight: bold; 
+  font-size: 20px; 
+  color: red
+}
+
+.profit-payment {
+  font-weight: bold; 
+  font-size: 30px; 
+  position: relative; 
+  top: 60px;
+}
+
 .kryg-galka {
   position: relative; 
-  height: 130px; 
+  height: 125px; 
   top: -22px;
 }
 
@@ -1279,116 +1295,107 @@ th {
   }
 
   .pos {
-    height: 2100px;
+    height: 2630px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .pos {
-    height: 2150px;
+    height: 2830px;
   }
 }
 
 @media screen and (max-width: 750px) {
   .pos {
-    height: 2200px;
+    height: 2872px;
   }
 }
 
 @media screen and (max-width: 710px) {
   .pos {
-    height: 2250px;
-  }
-  .pos {
-    height: 3400px;
+    height: 2910px;
   }
 }
 
 @media screen and (max-width: 691px) {
   .pos {
-    height: 3000px;
+    height: 3745px;
   }
 }
 
 @media screen and (max-width: 666px) {
   .pos {
-    height: 3050px;
+    height: 3810px;
   }
 }
 
 @media screen and (max-width: 590px) {
   .pos {
-    height: 3100px;
+    height: 3865px;
   }
 }
 
 @media screen and (max-width: 536px) {
   .pos {
-    height: 3150px;
+    height: 3890px;
   }
 }
 
 @media screen and (max-width: 496px) {
   .pos {
-    height: 3100px;
+    height: 3920px;
   }
 }
 
 @media screen and (max-width: 392px) {
   .pos {
-    height: 3200px;
+    height: 4000px;
   }
 }
 
 @media screen and (max-width: 378px) {
   .pos {
-    height: 3300px;
+    height: 4100px;
   }
 }
 
 @media screen and (max-width: 360px) {
   .pos {
-    height: 3350px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .pos {
-    height: 3450px;
+    height: 4230px;
   }
 }
 
 @media screen and (max-width: 337px) {
   .pos {
-    height: 2600px;
+    height: 3415px;
   }
 }
 
 @media screen and (max-width: 327px) {
   .pos {
-    height: 2650px;
+    height: 3450px;
   }
 }
 
 @media screen and (max-width: 315px) {
   .pos {
-    height: 2700px;
+    height: 3585px;
   }
 }
 
 @media screen and (max-width: 295px) {
   .pos {
-    height: 2800px;
+    height: 3685px;
   }
 }
 
 @media screen and (max-width: 285px) {
   .pos {
-    height: 2900px;
+    height: 3785px;
   }
 }
 
-@media screen and (min-width: 270px) and (max-width: 337px) {
+@media screen and (min-width: 270px) and (max-width: 338px) {
   /* tables */
 
   .bgimage {
@@ -1573,6 +1580,27 @@ th {
     padding-top: 15px;
   }
 
+  /* Profit */
+
+  .kryg-galka {
+    height: 55px;
+    top: -14px;
+  }
+
+  .profit-payment {
+    font-weight: bold; 
+    font-size: 18px; 
+    position: relative; 
+    top: 26px;
+  }
+
+  .table-result{
+    font-weight: bold; 
+    font-size: 18px; 
+    color: red;
+    margin: 2px;
+  }
+
   /* benefits */
 
   .benefits-container {
@@ -1584,7 +1612,6 @@ th {
   .benefits-text-p {
     font-size: 16px;
     line-height: 140%;
-    width: 160px;
   }
 
   .benefits-img {
@@ -1677,6 +1704,11 @@ th {
     width: 100%;
   }
 
+  .twoside-container-header {
+    font-size: 18px; 
+    padding-left: 0;
+  }
+
   .first-column {
     margin-left: 15px;
   }
@@ -1699,9 +1731,10 @@ th {
     width: 230px;
     margin-left: 15px;
   }
+
 }
 
-@media screen and (min-width: 338px) and (max-width: 495px) {
+@media screen and (min-width: 339px) and (max-width: 495px) {
   h1 {
     font-size: 39px;
   }
@@ -1869,6 +1902,27 @@ th {
     left: 52px;
   }
 
+  /* Profit */
+
+  .kryg-galka {
+    height: 55px;
+    top: -14px;
+  }
+
+  .profit-payment {
+    font-weight: bold; 
+    font-size: 18px; 
+    position: relative; 
+    top: 26px;
+  }
+
+  .table-result{
+    font-weight: bold; 
+    font-size: 18px; 
+    color: red;
+    margin: 2px;
+  }
+
   /* benefits */
 
   .benefits-container {
@@ -1880,7 +1934,6 @@ th {
   .benefits-text-p {
     font-size: 20px;
     line-height: 140%;
-    width: 300px;
   }
 
   .benefits-img {
@@ -2078,6 +2131,27 @@ th {
     left: 52px;
   }
 
+  /* Profit */
+
+  .kryg-galka {
+    height: 90px;
+    top: -20px;
+    left: -1px;
+  }
+
+  .profit-payment {
+    font-weight: bold; 
+    font-size: 30px; 
+    position: relative; 
+    top: 42px;
+  }
+
+  .table-result{
+    font-weight: bold; 
+    font-size: 20px; 
+    color: red;
+  }
+
   /* benefits */
 
   .benefits-container {
@@ -2089,7 +2163,6 @@ th {
   .benefits-text-p {
     font-size: 24px;
     line-height: 140%;
-    width: 300px;
   }
 
   .benefits-img {
@@ -2191,6 +2264,10 @@ th {
 }
 
 @media screen and (max-width: 980px) {
+  .twoside-container {
+    width: 88%;
+  }
+  
   .main-content-wrapper {
     width: 98%;
   }
