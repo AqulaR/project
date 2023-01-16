@@ -1295,43 +1295,43 @@ th {
   }
 
   .pos {
-    height: 2630px;
+    height: 2620px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .pos {
-    height: 2830px;
+    height: 2740px;
   }
 }
 
 @media screen and (max-width: 750px) {
   .pos {
-    height: 2872px;
+    height: 2800px;
   }
 }
 
 @media screen and (max-width: 710px) {
   .pos {
-    height: 2910px;
+    height: 2840px;
   }
 }
 
 @media screen and (max-width: 691px) {
   .pos {
-    height: 3745px;
+    height: 3720px;
   }
 }
 
 @media screen and (max-width: 666px) {
   .pos {
-    height: 3810px;
+    height: 3820px;
   }
 }
 
 @media screen and (max-width: 590px) {
   .pos {
-    height: 3865px;
+    height: 3875px;
   }
 }
 
@@ -1343,55 +1343,67 @@ th {
 
 @media screen and (max-width: 496px) {
   .pos {
-    height: 3920px;
+    height: 3740px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pos {
+    height: 3890px;
   }
 }
 
 @media screen and (max-width: 392px) {
   .pos {
-    height: 4000px;
+    height: 4010px;
   }
 }
 
 @media screen and (max-width: 378px) {
   .pos {
-    height: 4100px;
+    height: 4110px;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 350px) {
   .pos {
-    height: 4230px;
+    height: 4265px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .pos {
+    height: 3515px;
   }
 }
 
 @media screen and (max-width: 337px) {
   .pos {
-    height: 3415px;
+    height: 3425px;
   }
 }
 
 @media screen and (max-width: 327px) {
   .pos {
-    height: 3450px;
+    height: 3460px;
   }
 }
 
 @media screen and (max-width: 315px) {
   .pos {
-    height: 3585px;
+    height: 3530px;
   }
 }
 
 @media screen and (max-width: 295px) {
   .pos {
-    height: 3685px;
+    height: 3600px;
   }
 }
 
 @media screen and (max-width: 285px) {
   .pos {
-    height: 3785px;
+    height: 3710px;
   }
 }
 
@@ -2206,7 +2218,7 @@ th {
 
   .second-column {
     width: 300px;
-    margin-left: 40px;
+    margin-left: 38px;
   }
 
   /* tarrifs */
@@ -2268,6 +2280,10 @@ th {
     width: 88%;
   }
   
+  .howitwork-img {
+    width: 100%;
+  }
+
   .main-content-wrapper {
     width: 98%;
   }
@@ -2286,5 +2302,9 @@ th {
 
   .nono {
     padding-top: 20px;
+  }
+
+  .footer {
+    width: 100%;
   }
 }
