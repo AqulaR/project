@@ -262,7 +262,8 @@ h2 {
 }
 
 .bgimage {
-  background: url(../img/main-fon/content-intro-bg2.jpg) no-repeat center center;
+  background: url(../img/main-fon/content-intro-bg22.png) no-repeat center
+    center;
 }
 
 .btn {
@@ -1499,13 +1500,12 @@ th {
   .header {
     height: 92px;
   }
-  
+
   .info-container-top-logo-container {
     margin-left: 0;
   }
 
   /* express audit */
-
 
   .express-audit-image {
     display: none;
@@ -1934,11 +1934,11 @@ th {
         top: -2000px
     }*/
 
-    h1 {
-        font-size: 60px;
-    }
+  h1 {
+    font-size: 60px;
+  }
 
-    /* tables */
+  /* tables */
 
   td {
     padding-top: 10px;
