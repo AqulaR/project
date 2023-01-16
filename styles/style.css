@@ -1267,6 +1267,7 @@ table {
   outline: 1px solid #000;
   table-layout: fixed;
   margin-bottom: 25px;
+  border-collapse: collapse;
 }
 
 td {
