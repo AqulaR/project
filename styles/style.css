@@ -1807,6 +1807,7 @@ th {
 
   .first-column {
     margin-left: 15px;
+    width: auto;
   }
 
   .footer-email {
@@ -2283,7 +2284,6 @@ th {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
-    width: 100%;
   }
 
   /* about our company */
