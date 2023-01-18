@@ -993,11 +993,11 @@ h2 {
 }
 
 .form-sobs {
-  width: 400px;
+  width: 80%;
 }
 
 .form-employe {
-  width: 400px;
+  width: 80%;
 }
 
 .orderservice-container {
@@ -1019,11 +1019,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: start;
+  width: 100%;
 }
 
 .field {
   background-color: white;
-  width: 400px;
+  width: 80%;
   height: 50px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -1086,7 +1087,7 @@ input[type='radio']:checked::after {
   background-color: rgb(255, 222, 65);
   color: black;
   border-radius: 10px;
-  width: 400px;
+  width: 80%;
   height: 50px;
   text-align: center;
   cursor: pointer;
@@ -1117,7 +1118,7 @@ input[type='radio']:checked::after {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-  padding-bottom: 57px;
+  margin-bottom: 110px;
   text-align: left;
 }
 
@@ -1224,6 +1225,7 @@ input[type='radio']:checked::after {
   border-width: 1px 1px 1px 1px;
   border-radius: 7px;
   background-color: #ffde41;
+  margin-bottom: 10px;
 }
 
 .ip:hover {
@@ -1267,7 +1269,6 @@ caption {
 table {
   width: 100%;
   border: rgba(0, 0, 0, 1);
-  outline: 1px solid #000;
   table-layout: fixed;
   margin-bottom: 25px;
   border-collapse: collapse;
@@ -1309,7 +1310,7 @@ th {
 
 @media screen and (max-width: 850px) {
   .pos {
-    height: 2740px;
+    height: 2980px;
   }
 
   .benefits-container {
@@ -1340,9 +1341,15 @@ th {
   }
 }
 
+@media screen and (max-width: 785px) {
+  .pos {
+    height: 3475px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .pos {
-    height: 2800px;
+    height: 3475px;
   }
 
   .benefits-column-first {
@@ -1371,7 +1378,7 @@ th {
 
 @media screen and (max-width: 710px) {
   .pos {
-    height: 2840px;
+    height: 3525px;
   }
 }
 
@@ -1401,11 +1408,17 @@ th {
 
 @media screen and (max-width: 496px) {
   .pos {
-    height: 3740px;
+    height: 3720px;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .pos {
+    height: 3800px;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .pos {
     height: 3890px;
   }
@@ -1413,7 +1426,7 @@ th {
 
 @media screen and (max-width: 392px) {
   .pos {
-    height: 4010px;
+    height: 4020px;
   }
 
   .benefits-column-first {
@@ -2355,6 +2368,30 @@ th {
   }
 }
 
+@media screen and (min-width: 692px) and (max-width: 785px){
+  .tariffs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tariffs-blocks {
+    width: 285px;
+    height: 275px;
+    margin-top: 4%;
+    align-items: center;
+  }
+  .tariffs-blocks-text {
+    display: none;
+  }
+  .tariffs-blocks-button {
+    margin-top: 15%;
+    width: 150px;
+    height: 45px;
+  }
+  .tariffs-blocks-price {
+    margin-top: 10%;
+  }
+}
+
 @media screen and (min-width: 666px) {
   .info-container-top-logo-container {
     display: none;
@@ -2401,5 +2438,29 @@ th {
 
   .footer {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .order-content {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 339px) and (max-width: 460px) {
+  .order-name{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .doc-content{
+    width: auto;
+  }
+  .modal-content {
+    width: auto;
+  }
+  .services-not-included-in-the-tariff {
+    width: auto;
   }
 }
