@@ -1213,7 +1213,6 @@ input[type='radio']:checked::after {
 }
 
 .tariff_btn {
-  width: 600px;
   margin-top: 10px;
   padding: 0 16px;
 }
@@ -1396,37 +1395,37 @@ th {
 
 @media screen and (max-width: 590px) {
   .pos {
-    height: 3875px;
+    height: 3885px;
   }
 }
 
 @media screen and (max-width: 536px) {
   .pos {
-    height: 3890px;
+    height: 3900px;
   }
 }
 
 @media screen and (max-width: 496px) {
   .pos {
-    height: 3720px;
+    height: 3730px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .pos {
-    height: 3800px;
+    height: 3810px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .pos {
-    height: 3890px;
+    height: 3900px;
   }
 }
 
 @media screen and (max-width: 392px) {
   .pos {
-    height: 4020px;
+    height: 4030px;
   }
 
   .benefits-column-first {
@@ -1454,49 +1453,49 @@ th {
 
 @media screen and (max-width: 378px) {
   .pos {
-    height: 4110px;
+    height: 4120px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .pos {
-    height: 4265px;
+    height: 4275px;
   }
 }
 
 @media screen and (max-width: 338px) {
   .pos {
-    height: 3515px;
+    height: 3525px;
   }
 }
 
 @media screen and (max-width: 337px) {
   .pos {
-    height: 3425px;
+    height: 3435px;
   }
 }
 
 @media screen and (max-width: 327px) {
   .pos {
-    height: 3460px;
+    height: 3470px;
   }
 }
 
 @media screen and (max-width: 315px) {
   .pos {
-    height: 3530px;
+    height: 3540px;
   }
 }
 
 @media screen and (max-width: 295px) {
   .pos {
-    height: 3600px;
+    height: 3610px;
   }
 }
 
 @media screen and (max-width: 285px) {
   .pos {
-    height: 3710px;
+    height: 3720px;
   }
 }
 
