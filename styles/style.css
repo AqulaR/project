@@ -262,8 +262,7 @@ h2 {
 }
 
 .bgimage {
-  background: url(../img/main-fon/content-intro-bg22.png) no-repeat center
-    center;
+  background: url(../img/main-fon/main-fon-update.jpg) no-repeat center center;
 }
 
 .btn {
@@ -2367,7 +2366,7 @@ th {
   }
 }
 
-@media screen and (min-width: 692px) and (max-width: 785px){
+@media screen and (min-width: 692px) and (max-width: 785px) {
   .tariffs-container {
     flex-direction: column;
     align-items: center;
@@ -2447,13 +2446,13 @@ th {
 }
 
 @media screen and (min-width: 339px) and (max-width: 460px) {
-  .order-name{
+  .order-name {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .doc-content{
+  .doc-content {
     width: auto;
   }
   .modal-content {
